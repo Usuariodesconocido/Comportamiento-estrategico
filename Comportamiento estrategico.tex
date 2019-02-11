@@ -159,6 +159,49 @@ Es decir, existe ventaja a la hora de actuar como seguidor cuando los bienes son
 \section{Ejercicio 7:Competencia Bertrand}
 
 Competencia Bertrand con producto homog\'eneo, es decir, $d=1$:
+
+El coste marginal de la empresa 1 puede ser $\bar{c}$ o $\underline{c}$.
+El coste marginal de la empresa 2 es c con certeza.
+Se cumple:
+$$0<\underline{c}<c<\bar{c}$$
+
+La empresa 2 conoce la distribuci\'on de probabilidad del coste marginal de la empresa 1, es decir, sabe que el coste la empresa 1 es $\underline{c}$ con probabilidad $\gamma$; $0<\gamma<1$ y $\bar{c}$ con probabilidad $(1-\gamma)$.
+
+La funci\'on de demanda residual de la empresa es $q_i(p_i,p_j)=a-p_i+dp_j$. Sabiendo que $d=1$ para productos homog\'eneos (m\'aximo grado de substituci\'on) obtenemos:
+$$q_i(p_i,p_j)=a-p_i+p_j$$ $$i,j=1,2$$ $$i\neq j$$
+
+La estrategia \'optima para cada empresa es decidir el precio que constituya la mejor respuesta apra cada uno de los tipos  en los que podr\'ia encarnarse. As\'i, sus mejores respuestas provendr\'an de la maximizaci\'on de sus funciones de beneficios.
+
+Para 1 si su tipo es $\underline{c}$:
+$$\pi_1(p_1,p_2)=(p_1-\underline{c})(a-p_1+p_2)$$
+
+CPO:
+$$p_1(\underline{c};p_2)=\frac{a+\underline{c}+dp_2}{2}$$
+
+Para 1 si su tipo es $\bar{c}$:
+$$\pi_1(p_1,p_2)=(p_1-\bar{c})(a-p_1+p_2)$$
+
+CPO:
+$$p_1(\bar{c};p_2)=\frac{a+\bar{c}+dp_2}{2}$$
+
+Para la empresa 2, la funci\'on de beneficios esperados ser\'a:
+$$E[\pi_2]=(p_2-c)[\gamma(a-p_2+p_1(\underline{c})+(1-\gamma)(a-p_2+p_1(\bar{c}))]$$
+
+El precio \'optimo que fijar\'a la empresa 2 de acuerdo con sus creencias sobre los costes de la empresa 1 ser\'a:
+$$p_2(c;p_1(\underline{c}),p_1(\bar{c}))=\frac{a+c+(\gamma p_1(\underline{c})+(1-\gamma)p_1(\bar{c}))}{2}$$
+
+Resolviendo, el EB de el duopolio con bien homog\'eneo e informaci\'on incompleta de Bertrand es el perfil de estrategias:
+
+$${(p_1^*(\underline{c}),p_1^*(\bar{c}),p_2^*)}={(\frac{6a-(4-(1+\gamma))\underline{c}+(1-\gamma)\bar{c}+c}{6},\frac{6a+(4-\gamma)\bar{c}+\gamma \underline{c}+2c}{6},\frac{3a+2c+(\gamma \underline{c}+(1-\gamma)\bar{c})}{3})}$$
+
+
+
+
+
+
+
+
+
 \section{Ejercicio 8:Subastas}
 \subsection{Sobre cerrado segundo precio.}
 Investigar qu\'e sueder\'ia con la estrategia $b_i^`(v_i)<v_i$.
@@ -215,7 +258,7 @@ $$\frac{dB}{dv}(v)=(1-\frac{B(v)}{v})(n-1)$$
 Esta expresi\'on es una ecuaci\'on diferencial ordinaria de primer orden. Fijando la condici\'on $B(0)=0$ (La puja de un jugador con valoraci\'on nula es igual a 0) se obtiene:
 $$B(v)=\frac{n-1}{n}v$$
 
-Esta expresi\'on denota la relaci\'on existente entre la puja de cada jugador y su valoraci\'on. Como $\frac{n-1}{n}<1$, los jugadores pujan por debajo de sus verdaderas valoraciones en el EB
+Esta expresi\'on denota la relaci\'on existente entre la puja de cada jugador y su valoraci\'on. Como $\frac{n-1}{n}<1$, los jugadores pujan por debajo de sus verdaderas valoraciones en el EB.
 
 \section{Ejercicio 9:Provisi\'on de bien p\'ublico}
 \subsection{Modificaci\'on de pagos para que ninguno de los dos agentes tenga estrategia dominante.}
