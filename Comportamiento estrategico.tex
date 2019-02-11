@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Plantilla para un art�culo en LaTeX en espa�ol.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+% Esto es para poder escribir acentos directamente:
+\usepackage[latin1]{inputenc}
+% Esto es para que el LaTeX sepa que el texto est� en espa�ol:
+\usepackage[spanish]{babel}
+
+% Paquetes de la AMS:
+\usepackage{amsmath, amsthm, amsfonts}
+
+% Teoremas
+%--------------------------------------------------------------------------
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{cor}[thm]{Corolario}
+\newtheorem{lem}[thm]{Lema}
+\newtheorem{prop}[thm]{Proposici�n}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definici�n}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Observaci�n}
+
+% Atajos.
+% Se pueden definir comandos nuevos para acortar cosas que se usan
+% frecuentemente. Como ejemplo, aqu� se definen la R y la Z dobles que
+% suelen representar a los conjuntos de n�meros reales y enteros.
+%--------------------------------------------------------------------------
+
+\def\RR{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+
+% De la misma forma se pueden definir comandos con argumentos. Por
+% ejemplo, aqu� definimos un comando para escribir el valor absoluto
+% de algo m�s f�cilmente.
+%--------------------------------------------------------------------------
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+
+% Operadores.
+% Los operadores nuevos deben definirse como tales para que aparezcan
+% correctamente. Como ejemplo definimos en jacobiano:
+%--------------------------------------------------------------------------
+\DeclareMathOperator{\Jac}{Jac}
+
+%--------------------------------------------------------------------------
+\title{Entrega Comportamiento Estrat\'egico}
+\author{Pablo Coello Pulido\\
+}
+
+\begin{document}
+\maketitle
+
+\abstract{Tareas para entregar de la asignatura An\'alisis del Comportamiento Estrat\'egico. M\'aster en Econom\'ia.}
+
+\section{Ejercicio 1:}
+
+Aqu� va el texto.
+\begin{equation}\label{eq:area}
+  S = \pi r^2
+\end{equation}
+Uno puede referirse a ecuaciones as�: ver ecuaci�n (\ref{eq:area}).
+Tambi�n se pueden mencionar secciones de la misma forma: ver secci�n
+\ref{sec:nada}. O citar algo de la bibliograf�a: \cite{Cd94}.
+
+\subsection{Subsection}\label{sec:nada}
+
+M�s texto.
+
+\subsubsection{Subsubsection}\label{sec:nada2}
+
+M�s texto.
+\section{Ejercicio 2:}
+\subsection{Para n empresas:}
+
+$$Q=\sum_{i=1}^nq_i=q_i+\sum_{j\neq i}^nq_j$$
+$$p'(Q)<0; p''(Q)\geq0; p(Q)=a-Q$$
+
+Las n empresas producen lo mismo: $Q=q_i+(n-1)q_{-i}$
+
+$$\pi_i=p(Q)q_i-q_ic$$
+$$\pi_i=q_i(a-(q_i+(n-1)q_i)-c)=$$
+$$q_i(a-q_i-(n-1)q_{-i}-c)=$$
+$$aq_i-q_i^2-(n-1)q_{-i}q_i-cq_i$$
+
+$$\partial \pi_i/\partial q_i= a-2q_i-(n-1)q_{-i}-c=0$$
+$$q_i=\frac{a-(n-1)q_{-i}-c}{2}$$
+
+En equilibrio $q_i=q_{-i}$:
+$$2q_i+(n-1)q_{-i}=a-c; (n+1)q_i=a-c;$$
+$$q_i=\frac{a-c}{(n+1)}$$
+
+$$Q=nq_i \rightarrow p=a-Q=a-n(\frac{a-c}{(n+1)}$$
+
+Cuando el n\'umero de empresas tiende a infinito el precio tiende hacia el coste marginal:
+$$\lim_{n\rightarrow \infty}a-n(\frac{a-c}{(n+1)}=a-a+c;$$
+$$p=c$$
+
+\subsection{Para 2 empresas:}
+
+$$Q=q_i+q_j$$
+$$p(Q)=a-Q; p(Q)=a-(q_i+q_j)$$
+
+$$\pi_i(q_i,q_j)=p(Q)q_i-cq_i=q_i(a-(q_i+q_j))-cq_i$$
+$$\partial \pi_i/\partial q_i= a-2q_i-q_j-c=0$$
+As\'i, las mejores respuestas son:
+$$q_i=\frac{a-c-q_j}{2}$$
+$$q_j=\frac{a-c-q_j}{2}$$
+Resolviendo:
+$$q_i=q_j=\frac{(a-c)}{3}$$
+$$p=a-Q=a-2(\frac{a-c}{3})=a-\frac{2}{3}a+\frac{2}{3}c=$$
+$$$$
+
+\section{Ejercicio 3:}
+\section{Ejercicio 4:}
+\section{Ejercicio 5:}
+\section{Ejercicio 6:}
+\section{Ejercicio 7:}
+\section{Ejercicio 8:}
+\section{Ejercicio 9:}
+\section{Ejercicio 10:}
+\section{Ejercicio 11:}
+
+
+
+% Bibliograf�a.
+%-----------------------------------------------------------------
+\begin{thebibliography}{99}
+
+\bibitem{Cd94} Autor, \emph{T�tulo}, Revista/Editor, (a�o)
+
+\end{thebibliography}
+
+\end{document}
