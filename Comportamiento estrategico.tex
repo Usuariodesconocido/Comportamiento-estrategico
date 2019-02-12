@@ -56,31 +56,33 @@
 
 \abstract{Tareas para entregar de la asignatura An\'alisis del Comportamiento Estrat\'egico. M\'aster en Econom\'ia.}
 
-\section{Ejercicio 155444:}
+\section{Ejercicio 1:}
 
-Aqu� va el texto.
-\begin{equation}\label{eq:area}
-  S = \pi r^2
-\end{equation}
-Uno puede referirse a ecuaciones as�: ver ecuaci�n (\ref{eq:area}).
-Tambi�n se pueden mencionar secciones de la misma forma: ver secci�n
-\ref{sec:nada}. O citar algo de la bibliograf�a: \cite{Cd94}.
+En el siguiente Juego a la Cournot la demanda de mercado que enfrentan n empresas es estrictamente convexa con la forma
+$p(q)=\frac{a}{Q^\alpha}$, donde $Q=\sum_{i=1}^n q_i$. Los consumidores se asumen pasivos y vienen descritos por $p(Q)=a-bQ$.
+\subsection{Empresas producen con $C_i(q_i)=cq_i$}
+Si consideramos que el n\'umero de empresas \textbf{n} es 2, podemos calcular las cantidades que maximizan sus beneficios como:
+ $$max\thinspace \pi_i(q_i)=q_i-cq_i$$
+ condierando la maximizaci\'on de los beneficios de la empresa 1 tenemos:
+ $$max\thinspace \pi_1(q_1)=(\frac{a}{(q_1+q_2)^\alpha})q_1-cq_1$$
+podemos emplear derivadas parciales para obtener la condici\'on de primer orden:
+  $$\frac{\partial(\pi_1(q_1,q_2)}{\partial q_1} = \frac{\partial}{\partial q_1} (\frac{aq_1}{cq_1+q_2)^\alpha})$$
+  derivando podemos llegamos a la expresi\'on:
+  $$-a\alpha q_1(q_1+q_2)^{-(\alpha+1)}+a(q_1+q_2)^{-\alpha}-c=0$$
+  operando matematicamente podemos obtener $q_2=q_2(q_1)$:
+  $$q_2=\sqrt{\frac{\frac{-c}{a}}{\alpha q_1-1}}^{\frac{1}{\alpha-1}}$$
+  
+  
+\subsection{Empresas producen con $C_i(q_i)=\frac{c}{2}q_i^2$}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
-\subsection{Subsection}\label{sec:nada}
-
-M�s texto.
-
-\subsubsection{Subsubsection}\label{sec:nada2}
-
-M�s texto.
-\section{Ejercicio 2:}
+\section{Ejercicio 2:}                     
 \subsection{Para n empresas:}
 
-$$Q=\sum_{i=1}^nq_i=q_i+\sum_{j\neq i}^nq_j$$
-$$p'(Q)<0; p''(Q)\geq0; p(Q)=a-Q$$
-
+$$Q=\sum_{i=1}^nq_i=q_i+\sum_{j\neq i}^nq_j$$             
+$$p'(Q)<0; p''(Q)\geq0; p(Q)=a-Q$$                                
+         
 Las n empresas producen lo mismo: $Q=q_i+(n-1)q_{-i}$
-
+                                                                                                                                                                                                           
 $$\pi_i=p(Q)q_i-q_ic$$
 $$\pi_i=q_i(a-(q_i+(n-1)q_i)-c)=$$
 $$q_i(a-q_i-(n-1)q_{-i}-c)=$$
