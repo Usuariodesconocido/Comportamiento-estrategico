@@ -1,0 +1,144 @@
+\documentclass{article}
+
+\usepackage{Sweave}
+\begin{document}
+\input{PUTAPRUEBA-concordance}
+
+\abstract{Tareas para entregar de la asignatura An\'alisis del Comportamiento Estrat\'egico. M\'aster en Econom\'ia.}
+\section{Ejercicio 1:}
+
+En el siguiente Juego a la Cournot la demanda de mercado que enfrentan n empresas es estrictamente convexa con la forma
+$p(q)=\frac{a}{Q^\alpha}$, donde $Q=\sum_{i=1}^n q_i$. Los consumidores se asumen pasivos y vienen descritos por $p(Q)=a-bQ$.
+
+\subsection{Empresas producen con $C_i(q_i)=cq_i$}
+Si consideramos que el n\'umero de empresas \textbf{n} es 2, podemos calcular las cantidades que maximizan sus beneficios como:
+ $$max\thinspace \pi_i(q_i)=q_i-cq_i$$
+ condierando la maximizaci\'on de los beneficios de la empresa 1 tenemos:
+ $$max\thinspace \pi_1(q_1)=(\frac{a}{(q_1+q_2)^\alpha})q_1-cq_1$$
+podemos emplear derivadas parciales para obtener la condici\'on de primer orden:
+  $$\frac{\partial(\pi_1(q_1,q_2)}{\partial q_1} = \frac{\partial}{\partial q_1} (\frac{aq_1}{cq_1+q_2)^\alpha})$$
+  derivando podemos llegamos a la expresi\'on:
+  $$-a\alpha q_1(q_1+q_2)^{-(\alpha+1)}+a(q_1+q_2)^{-\alpha}-c=0$$
+  operando matematicamente podemos obtener $q_2=q_2(q_1)$:
+$$q_2=\sqrt{\frac{\frac{-c}{a}}{\alpha q_1-1}}^{\frac{1}{\alpha-1}}$$
+Esta funci\'on puede ser expresada en el espacio \{$q_1,q_2$\} como se aprecia en la siguiente figura:
+
+\begin{Schunk}
+\begin{Sinput}
+> a=0.4; c=0.2; alfa=0.5
+> q1=seq(0,0.999,by=0.01)
+> q2=-q1+sqrt((-a/c)/(alfa*q1-1))
+> plot(q1,q2)
+\end{Sinput}
+\end{Schunk}
+\includegraphics{PUTAPRUEBA-001}
+
+Para resolver asignamos valores arbitrarios as variables (a>c). Vemos unha funci\'on decreciente. Ahora si sumonemos que las empresas producen un bien id\'entico $q_1=q_2$ podemos obterner una solución de la produci\'on con un programa de c\'alculo como R:
+
+\begin{Schunk}
+\begin{Sinput}
+> p1=function(x){2*x-(sqrt((-a/c)/(alfa*x-1)))^(alfa-1)}
+> plot(p1) 
+> o1=uniroot(p1,c(0.1,1))
+> (raiz1=o1$root)
+\end{Sinput}
+\begin{Soutput}
+[1] 0.3977708
+\end{Soutput}
+\end{Schunk}
+
+Vemos que el programa nos arroja un valor de la produción de 0.399 cuando los bienes son homogeneos.
+
+\subsection{Empresas producen con $C_i(q_i)=\frac{c}{2}q_i^2$}
+
+
+\section{Ejercicio 4:}
+
+En este ejercicio intentaremos mostrar en juegos dinámicos de Cournot-Stackelberg mover primero no es siempre una ventaja. Vamos a emplear un mode similar al del Ejercicio 1, pero con costes crecientes de la forma $cq_i^3$.
+
+\vspace{5mm}
+
+Primero empezaremos por maximizar los beneficios de la empresa 2:
+
+$$max\thinspace \pi_2(q_1,q_2)=aq_2-b(q_2+q_1)q_2-cq^3_2$$
+
+obteniendo ahora la condici\'on de primer orden:
+
+$$(\frac{\partial}{\partial q_1})(aq_2-b(q_2+q_1)q_2-cq^3_2)$$
+
+obtenemos como soluci\'on:
+
+$$q_2=\frac{2b+\sqrt{4b^2+12c(-q_1b+a)}}{6c}$$
+
+esta es la cantidad de producci\'on que maximiza los beneficios de la empresa dos. Ahora maximizaremos los beneficios de la empresa uno considerando la produci\'on de la empresa dos que maximiza sus pripios beneficios $(q_2)$:
+
+$$max\thinspace \pi_1(q_1,q_2)=aq_1-b(q_1+\frac{2b+\sqrt{4b^2+12c(-q_1b+a)}}{6c}q_1-cq^3_1$$
+
+realizando la derivada parcial, con respecto a $q1$, y reordenando obtenemos la siguiente ecuación:
+
+$$a-2bq_1+\frac{2b^2}{6c}+\frac{b}{6c}\frac{q_1(a+2b(9q_1+2))}{\sqrt{q_1^2(a+4(3bq_1+b)})}-3q_1^2=0$$
+
+Para resolver esta ecuaci\'on anterior utilizaremos el siguiente Script de R:
+\begin{Schunk}
+\begin{Sinput}
+> a=0.6 ;b=0.2 ;co=0.4 
+> p1=function(x){a-2*b*x+2*b^2/(6*co)+(b/(6*co)*(x*(a+2*b*(9*x+2)))/
++                                        (sqrt((x^2)*(a+4*(3*b*x+b)))))-3*x^2}
+> plot(p1) 
+> o1=uniroot(p1,c(0.1,1))
+> (raiz1=o1$root)
+\end{Sinput}
+\begin{Soutput}
+[1] 0.4518852
+\end{Soutput}
+\end{Schunk}
+\includegraphics{PUTAPRUEBA-003}
+\begin{Schunk}
+\begin{Sinput}
+> p2=function(x){6*co*x-2*b-sqrt(4*b^2+12*co*(-raiz1*b+a))}
+> o2=uniroot(p2,c(0.1,1))
+> plot(p2)
+> (raiz2=o2$root)
+\end{Sinput}
+\begin{Soutput}
+[1] 0.8393208
+\end{Soutput}
+\end{Schunk}
+\includegraphics{PUTAPRUEBA-004}
+
+Hemos dados valores aleatorios a las variables a, b y c y obtenemos la raiz de $q_1$. OS valores otorgados as variables son aleatorios pero teñen certa coherencia. a (m\'aima disposici\'on a pagar) es mayor que el coste marginal c. Por otro lado, como $b=0,2$ la pendiente de la demanda es muy pequeña por lo que la eslasticidade precio-demanda es muy grande.
+
+Vemos de esta manera que la produci\'on de la empresa 1 ($q_1=0.45$) es inferior a la de la empresa 2 ($Q_2=0.83$) (supuesto que las empressas son homogeneass)
+
+
+
+
+
+\section{Ejercicio 6:}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

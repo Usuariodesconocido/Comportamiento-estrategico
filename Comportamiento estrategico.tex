@@ -120,6 +120,17 @@ Por lo tanto, el precio ser\'a mayor que el coste marginal generando beneficios 
 
 \section{Ejercicio 3:}
 \section{Ejercicio 4:}
+\begin{Schunk}
+\begin{Sinput}
+> a=0.6 
+> b=0.5 
+> co=0.7 
+> p1=function(x){a-2*b*x+2*b^2/(6*co)+(b/(6*co)*(x*(a+2*b*(9*x+2)))/(sqrt((x^2)*(a+4*(3*b*x+b)))))-3*x^2}
+> plot(p1) 
+> (o1=uniroot(p1,c(0.1,1))) 
+\end{Sinput}
+\begin{Soutput}
+
 \section{Ejercicio 5: Competencia Stackelberg-Bertrand con producto diferenciado.}
 $$p_1(q_1,q_2)=1-q_1-dq_2; d\in(-1,1)$$
 $$p_2(q_1,q_2)=1-q_2-dq_1; d\in(-1,1)$$
