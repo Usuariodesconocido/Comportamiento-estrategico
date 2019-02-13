@@ -3,6 +3,7 @@
 \usepackage{Sweave}
 \begin{document}
 \input{PUTAPRUEBA-concordance}
+\input{PUTAPRUEBA-concordance}
 
 \abstract{Tareas para entregar de la asignatura An\'alisis del Comportamiento Estrat\'egico. M\'aster en Econom\'ia.}
 \section{Ejercicio 1:}
@@ -23,6 +24,7 @@ podemos emplear derivadas parciales para obtener la condici\'on de primer orden:
 $$q_2=\sqrt{\frac{\frac{-c}{a}}{\alpha q_1-1}}^{\frac{1}{\alpha-1}}$$
 Esta funci\'on puede ser expresada en el espacio \{$q_1,q_2$\} como se aprecia en la siguiente figura:
 
+
 \begin{Schunk}
 \begin{Sinput}
 > a=0.4; c=0.2; alfa=0.5
@@ -32,6 +34,8 @@ Esta funci\'on puede ser expresada en el espacio \{$q_1,q_2$\} como se aprecia e
 \end{Sinput}
 \end{Schunk}
 \includegraphics{PUTAPRUEBA-001}
+
+
 
 Para resolver asignamos valores arbitrarios as variables (a>c). Vemos unha funci\'on decreciente. Ahora si sumonemos que las empresas producen un bien id\'entico $q_1=q_2$ podemos obterner una solución de la produci\'on con un programa de c\'alculo como R:
 
@@ -46,6 +50,9 @@ Para resolver asignamos valores arbitrarios as variables (a>c). Vemos unha funci
 [1] 0.3977708
 \end{Soutput}
 \end{Schunk}
+\includegraphics{PUTAPRUEBA-002}
+
+
 
 Vemos que el programa nos arroja un valor de la produción de 0.399 cuando los bienes son homogeneos.
 
@@ -83,7 +90,7 @@ Para resolver esta ecuaci\'on anterior utilizaremos el siguiente Script de R:
 \begin{Sinput}
 > a=0.6 ;b=0.2 ;co=0.4 
 > p1=function(x){a-2*b*x+2*b^2/(6*co)+(b/(6*co)*(x*(a+2*b*(9*x+2)))/
-+                                        (sqrt((x^2)*(a+4*(3*b*x+b)))))-3*x^2}
++ +                                        (sqrt((x^2)*(a+4*(3*b*x+b)))))-3*x^2}
 > plot(p1) 
 > o1=uniroot(p1,c(0.1,1))
 > (raiz1=o1$root)
@@ -93,6 +100,9 @@ Para resolver esta ecuaci\'on anterior utilizaremos el siguiente Script de R:
 \end{Soutput}
 \end{Schunk}
 \includegraphics{PUTAPRUEBA-003}
+
+
+
 \begin{Schunk}
 \begin{Sinput}
 > p2=function(x){6*co*x-2*b-sqrt(4*b^2+12*co*(-raiz1*b+a))}
@@ -106,6 +116,8 @@ Para resolver esta ecuaci\'on anterior utilizaremos el siguiente Script de R:
 \end{Schunk}
 \includegraphics{PUTAPRUEBA-004}
 
+
+
 Hemos dados valores aleatorios a las variables a, b y c y obtenemos la raiz de $q_1$. OS valores otorgados as variables son aleatorios pero teñen certa coherencia. a (m\'aima disposici\'on a pagar) es mayor que el coste marginal c. Por otro lado, como $b=0,2$ la pendiente de la demanda es muy pequeña por lo que la eslasticidade precio-demanda es muy grande.
 
 Vemos de esta manera que la produci\'on de la empresa 1 ($q_1=0.45$) es inferior a la de la empresa 2 ($Q_2=0.83$) (supuesto que las empressas son homogeneass)
@@ -115,11 +127,111 @@ Vemos de esta manera que la produci\'on de la empresa 1 ($q_1=0.45$) es inferior
 
 
 \section{Ejercicio 6:}
+\section{Ejercicio 7: Competencia Bertrand}
+
+Competencia Bertrand con producto homog\'eneo, es decir, $d=1$:
+
+El coste marginal de la empresa 1 puede ser $\bar{c}$ o $\underline{c}$.
+El coste marginal de la empresa 2 es c con certeza.
+Se cumple:
+$$0<\underline{c}<c<\bar{c}$$
+
+La empresa 2 conoce la distribuci\'on de probabilidad del coste marginal de la empresa 1, es decir, sabe que el coste la empresa 1 es $\underline{c}$ con probabilidad $\gamma$; $0<\gamma<1$ y $\bar{c}$ con probabilidad $(1-\gamma)$.
+
+La funci\'on de demanda residual de la empresa es $q_i(p_i,p_j)=a-p_i+dp_j$. Sabiendo que $d=1$ para productos homog\'eneos (m\'aximo grado de substituci\'on) obtenemos:
+$$q_i(p_i,p_j)=a-p_i+p_j$$ $$i,j=1,2$$ $$i\neq j$$
+
+La estrategia \'optima para cada empresa es decidir el precio que constituya la mejor respuesta apra cada uno de los tipos  en los que podr\'ia encarnarse. As\'i, sus mejores respuestas provendr\'an de la maximizaci\'on de sus funciones de beneficios.
+
+Para 1 si su tipo es $\underline{c}$:
+$$\pi_1(p_1,p_2)=(p_1-\underline{c})(a-p_1+p_2)$$
+
+CPO:
+$$p_1(\underline{c};p_2)=\frac{a+\underline{c}+dp_2}{2}$$
+
+Para 1 si su tipo es $\bar{c}$:
+$$\pi_1(p_1,p_2)=(p_1-\bar{c})(a-p_1+p_2)$$
+
+CPO:
+$$p_1(\bar{c};p_2)=\frac{a+\bar{c}+dp_2}{2}$$
+
+Para la empresa 2, la funci\'on de beneficios esperados ser\'a:
+$$E[\pi_2]=(p_2-c)[\gamma(a-p_2+p_1(\underline{c})+(1-\gamma)(a-p_2+p_1(\bar{c}))]$$
+
+El precio \'optimo que fijar\'a la empresa 2 de acuerdo con sus creencias sobre los costes de la empresa 1 ser\'a:
+$$p_2(c;p_1(\underline{c}),p_1(\bar{c}))=\frac{a+c+(\gamma p_1(\underline{c})+(1-\gamma)p_1(\bar{c}))}{2}$$
+
+Resolviendo, el EB de el duopolio con bien homog\'eneo e informaci\'on incompleta de Bertrand es el perfil de estrategias:
+
+$${(p_1^*(\underline{c}),p_1^*(\bar{c}),p_2^*)}={(\frac{6a-(4-(1+\gamma))\underline{c}+(1-\gamma)\bar{c}+c}{6},\frac{6a+(4-\gamma)\bar{c}+\gamma \underline{c}+2c}{6},\frac{3a+2c+(\gamma \underline{c}+(1-\gamma)\bar{c})}{3})}$$
 
 
 
 
+\section{Ejercicio 8:Subastas}
+\subsection{Sobre cerrado segundo precio.}
+Investigar qu\'e sueder\'ia con la estrategia $b_i^`(v_i)<v_i$.
+\subsection{Sobre cerrado al primer precio}
 
+En este tipo de subastas, el ganador es aquel jugador que ofreciese la puja m\'as alta. El pago ser\'a su ropia oferta. Adem\'as, los jugadores no pueden ver las pujas de los dem\'as.
+
+Calcular la MRi y obtener EBN.
+
+Conjunto de acciones posibles para cada jugador: $i=1,..,n$. Se corresponde con el conjunto de pujas que puede ofertar.
+El conjunto de acciones y de estrategias coincide al ser un juego simult\'aneo:
+$$A_i=S_i=[0,+\infty)$$
+
+Los tipos de cada jugador i son las distintas valoraciones que puede tener del objeto subastado:
+$$T_i=[0,\bar{v}]$$
+
+Cada i cree que el resto de valoraciones $v_j$ est\'a uniformemente distribuida en $[0,\bar{v}]$.
+
+El pago de cada jugador es su beneficio esperado.
+
+El objetivo de cada jugador es maximizar el beneficio.
+
+En esta situaci\'on, el EB ser\'a el perfil de pujas:
+$${(b_1^*,...,b_n^*)}={(\frac{n-1}{n}v_1,...,\frac{n-1}{n}v_n)}$$
+
+No hay estrategia dominante, cada jugador debe determinar su mejor respuesta frente a la estrategia de los dem\'as.
+
+Definimos la probabilidad de que i puje por debajo de b:
+$$Pr(B_i\leq b)=Pr(v_i\leq B^{-1}(b))=F(B^{-1}(b))=\frac{B^{-1(b)}}{\bar{v}}$$
+
+Todo jugador distinto de i puede saber con qu\'probabilidad ganar\'a la subasta conociendo la probabilidad anterior, esto se debe a que cuando puja b, conoce la probabilidad de que i puje menos que b.
+
+La probabilidad de que todos los jugadores menos el jugador 1 pujen menos que b es:
+$$Pr(B_i\leq b, \forall i=2,3,...,n)=(\frac{B^{-1(b)}}{\bar{v}})^{n-1}$$
+ Por lo tanto, esta es la probabilidad de que 1 gane la subasta puando b.
+
+La utilidad esperada de 1 pujando b es:
+$$E[u_1]=(v_1-b)(\frac{B^{-1(b)}}{\bar{v}})^{n-1}$$
+
+Teniedo en cuenta que si gana obtiene $v_1-b$, y si pierde obtiene 0.
+
+Maximizando la utilidad esperada obtenemos la siguiente CPO:
+$$\partial E[u_1]/\partial b=0=(-1)(\frac{B^{-1(b)}}{\bar{v}})^{n-1}+(v_1-b)(n-1)(\frac{B^{-1(b)}}{\bar{v}})^{n-2}\frac{1}{\bar{v}}\frac{dB^{-1}(b)}{db}$$
+
+Reescribiendo:
+$$(\frac{B^{-1(b)}}{\bar{v}})^{n-1}=(v_1-b)(n-1)(\frac{B^{-1(b)}}{\bar{v}})^{n-2}\frac{1}{\bar{v}}\frac{dB^{-1}(b)}{db}$$
+
+Simplificando:
+$$B^{-1}(b)\frac{dB}{dv}(B^{-1}(b))=(v_1-b)(n-1)$$
+
+Asumiendo todos los jugadores sim\'etricos: $B^{-1}(b)=v_1$ y $b=B(v_1)$; As\'i:
+$$\frac{dB}{dv}(v)=(1-\frac{B(v)}{v})(n-1)$$
+
+Esta expresi\'on es una ecuaci\'on diferencial ordinaria de primer orden. Fijando la condici\'on $B(0)=0$ (La puja de un jugador con valoraci\'on nula es igual a 0) se obtiene:
+$$B(v)=\frac{n-1}{n}v$$
+
+Esta expresi\'on denota la relaci\'on existente entre la puja de cada jugador y su valoraci\'on. Como $\frac{n-1}{n}<1$, los jugadores pujan por debajo de sus verdaderas valoraciones en el EB.
+
+
+
+\section{Ejercicio 9:Provisi\'on de bien p\'ublico}
+\subsection{Modificaci\'on de pagos para que ninguno de los dos agentes tenga estrategia dominante.}
+\subsection{Generalizar el modelo con el sistema de creencias $(p,1-p)$.}
+\section{Ejercicio 10:}
 
 
 
