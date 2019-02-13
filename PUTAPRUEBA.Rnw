@@ -43,6 +43,11 @@ o1=uniroot(p1,c(0.1,1))
 (raiz1=o1$root)
 @
 
+<<>>=
+a=0
+b=0
+a+b
+@
 
 
 Vemos que el programa nos arroja un valor de la produción de 0.399 cuando los bienes son homogeneos.
