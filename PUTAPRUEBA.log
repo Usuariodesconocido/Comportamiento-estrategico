@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.2.11)  14 FEB 2019 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.2.11)  14 FEB 2019 20:21
 entering extended mode
 **./PUTAPRUEBA.tex
 (PUTAPRUEBA.tex
@@ -375,16 +375,16 @@ Package caption Info: End \AtBeginDocument code.
 
 (PUTAPRUEBA-concordance.tex) (PUTAPRUEBA-concordance.tex)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 14.
+(Font)              <9> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 14.
+(Font)              <6> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 14.
+(Font)              <5> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 16.
+(Font)              <12> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 31.
+(Font)              <8> on input line 20.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 35.
 
 (/home/xacome/.miktex/texmfs/install/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -392,7 +392,7 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 <PUTAPRUEBA-001.pdf, id=3, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-001.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-001.pdf>
-Package pdftex.def Info: PUTAPRUEBA-001.pdf  used on input line 38.
+Package pdftex.def Info: PUTAPRUEBA-001.pdf  used on input line 42.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
  [1
 
@@ -400,15 +400,15 @@ Package pdftex.def Info: PUTAPRUEBA-001.pdf  used on input line 38.
 <PUTAPRUEBA-002.pdf, id=25, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-002.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-002.pdf>
-Package pdftex.def Info: PUTAPRUEBA-002.pdf  used on input line 55.
+Package pdftex.def Info: PUTAPRUEBA-002.pdf  used on input line 59.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
  [2 <./PUTAPRUEBA-001.pdf>]
-Overfull \hbox (14.53027pt too wide) in paragraph at lines 63--63
-[]\T1/aer/bx/n/14.4 Ejercicio 2: Calcular ECN en condiciones
+Overfull \hbox (14.53027pt too wide) in paragraph at lines 67--67
+[]\T1/aer/bx/n/14.4 Ejercicio 3: Calcular ECN en condiciones
  []
 
 [3 <./PUTAPRUEBA-002.pdf>] [4]
-Overfull \hbox (12.65076pt too wide) in paragraph at lines 141--142
+Overfull \hbox (12.65076pt too wide) in paragraph at lines 147--148
 []\T1/aer/m/n/9 realizando la derivada parcial, con respecto a $\OML/cmm/m/it/9
  q\OT1/cmr/m/n/9 1$\T1/aer/m/n/9 , y reordenando obtenemos
  []
@@ -416,28 +416,28 @@ Overfull \hbox (12.65076pt too wide) in paragraph at lines 141--142
 <PUTAPRUEBA-003.pdf, id=47, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-003.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-003.pdf>
-Package pdftex.def Info: PUTAPRUEBA-003.pdf  used on input line 159.
+Package pdftex.def Info: PUTAPRUEBA-003.pdf  used on input line 165.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
 [5]
 <PUTAPRUEBA-004.pdf, id=51, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-004.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-004.pdf>
-Package pdftex.def Info: PUTAPRUEBA-004.pdf  used on input line 174.
+Package pdftex.def Info: PUTAPRUEBA-004.pdf  used on input line 180.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
  [6 <./PUTAPRUEBA-003.pdf>]
-Overfull \hbox (29.02469pt too wide) in paragraph at lines 184--184
+Overfull \hbox (29.02469pt too wide) in paragraph at lines 190--190
 []\T1/aer/bx/n/14.4 Ejercicio 6:Generalización de juego estático
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 188.
+(Font)              <7> on input line 194.
 
-Overfull \hbox (16.70871pt too wide) in paragraph at lines 221--221
+Overfull \hbox (16.70871pt too wide) in paragraph at lines 227--227
 []\T1/aer/bx/n/12 Los dos jugadores tienen información incompleta
  []
 
 
-Overfull \hbox (38.82405pt too wide) in paragraph at lines 221--221
+Overfull \hbox (38.82405pt too wide) in paragraph at lines 227--227
 \T1/aer/bx/n/12 y simétrica (por lo tanto ambos asignan las probabilidades
  []
 
@@ -445,62 +445,62 @@ Overfull \hbox (38.82405pt too wide) in paragraph at lines 221--221
 <PUTAPRUEBA-005.pdf, id=69, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-005.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-005.pdf>
-Package pdftex.def Info: PUTAPRUEBA-005.pdf  used on input line 244.
+Package pdftex.def Info: PUTAPRUEBA-005.pdf  used on input line 250.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
  [8] [9 <./PUTAPRUEBA-005.pdf>]
 <PUTAPRUEBA-008.pdf, id=81, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-008.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-008.pdf>
-Package pdftex.def Info: PUTAPRUEBA-008.pdf  used on input line 293.
+Package pdftex.def Info: PUTAPRUEBA-008.pdf  used on input line 299.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
  [10 <./PUTAPRUEBA-008.pdf>]
-Overfull \hbox (0.92389pt too wide) in paragraph at lines 361--361
+Overfull \hbox (0.92389pt too wide) in paragraph at lines 367--367
 []\T1/aer/bx/n/14.4 Ejercicio 7: Competencia Bertrand con
  []
 
 
-Overfull \hbox (4.42896pt too wide) in paragraph at lines 370--371
+Overfull \hbox (4.42896pt too wide) in paragraph at lines 376--377
 \T1/aer/m/n/9 de la empresa 1, es decir, sabe que el coste la empresa 1 es $[]$
  con probabilidad
  []
 
 [11]
-Overfull \hbox (10.07173pt too wide) in paragraph at lines 375--376
+Overfull \hbox (10.07173pt too wide) in paragraph at lines 381--382
 []\T1/aer/m/n/9 La estrategia óptima para cada empresa es decidir el precio que
  constituya
  []
 
 
-Overfull \hbox (1.72224pt too wide) in paragraph at lines 375--376
+Overfull \hbox (1.72224pt too wide) in paragraph at lines 381--382
 \T1/aer/m/n/9 Así, sus mejores respuestas provendrán de la maximización de sus 
 funciones
  []
 
 
-Overfull \hbox (134.87709pt too wide) detected at line 397
+Overfull \hbox (134.87709pt too wide) detected at line 403
 [] \OT1/cmr/m/n/9 = []
  []
 
 [12]
-Overfull \hbox (7.3494pt too wide) in paragraph at lines 427--428
+Overfull \hbox (7.3494pt too wide) in paragraph at lines 433--434
 []\T1/aer/m/n/9 Cada i cree que el resto de valoraciones $\OML/cmm/m/it/9 v[]$ 
 \T1/aer/m/n/9 está uniformemente distribuida
  []
 
 [13]
-Overfull \hbox (2.04366pt too wide) in paragraph at lines 467--468
+Overfull \hbox (2.04366pt too wide) in paragraph at lines 473--474
 []\T1/aer/m/n/9 Esta expresión denota la relación existente entre la puja de ca
 da jugador
  []
 
 [14]
-Overfull \hbox (3.90677pt too wide) in paragraph at lines 527--528
+Overfull \hbox (3.90677pt too wide) in paragraph at lines 534--535
 []\T1/aer/m/n/9 Vemos con esto los valores esperados el individuo 2 tendrá una 
 estrategia
  []
 
 
-Overfull \hbox (17.4641pt too wide) in paragraph at lines 555--555
+Overfull \hbox (17.4641pt too wide) in paragraph at lines 562--562
 []\T1/aer/bx/n/12 Generalizar el modelo con el sistema de creencias
  []
 
@@ -512,7 +512,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4032 strings out of 494865
  62638 string characters out of 3178257
- 120642 words of memory out of 3000000
+ 121642 words of memory out of 3000000
  7599 multiletter control sequences out of 15000+200000
  26119 words of font info for 58 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
@@ -540,7 +540,7 @@ miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsltt10.pfb></home/xacome
 miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/xacome/.m
 iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb></home/xacome/.mi
 ktex/texmfs/install/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on PUTAPRUEBA.pdf (16 pages, 303841 bytes).
+Output written on PUTAPRUEBA.pdf (16 pages, 303863 bytes).
 PDF statistics:
  184 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
