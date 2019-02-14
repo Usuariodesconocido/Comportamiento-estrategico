@@ -1,6 +1,8 @@
 \documentclass{article}
 
 \usepackage{Sweave}
+\usepackage{slashbox}
+\usepackage{subfig}
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 \input{PUTAPRUEBA-concordance}
@@ -43,11 +45,6 @@ o1=uniroot(p1,c(0.1,1))
 (raiz1=o1$root)
 @
 
-<<>>=
-a=0
-b=0
-a+b
-@
 
 
 Vemos que el programa nos arroja un valor de la produción de 0.399 cuando los bienes son homogeneos.
@@ -163,9 +160,155 @@ Vemos de esta manera que la produci\'on de la empresa 1 ($q_1=0.45$) es inferior
 
 
 
-
-
 \section{Ejercicio 6:Generalizaci\'on de juego est\'atico con informaci\'on incompleta}
+Consideremos las siguientes situaci\'on:
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+1/2 & a & b & c \\
+\hline \hline
+A & 4,2 & 4,2 & 4,0 \\ \hline
+B & 6,6 & 0,10 & 0,0 \\ \hline
+
+\end{tabular}
+\caption{Jugador 2 de tipo x}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+1/2 & a & b & c \\
+\hline \hline
+A & 4,2 & 4,0 & 4,3 \\ \hline
+B & 6,6 & 0,0 & 0,10 \\ \hline
+
+\end{tabular}
+\caption{Jugador 2 de tipo z}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+
+
+La probabilidad de que el jugador 2 sea de tipo x es p, as\'i mismo, la pobabilidad de que sea de tipo z es (1-p).
+
+
+\subsection{Los dos jugadores tienen informaci\'on incompleta y sim\'etrica (por lo tanto ambos asignan las probabilidades p y (1-p))}
+
+Al ser un juego simult\'aneo, el conjunto de estrategias coincide con el conjunto de acciones para cada jugador:
+$$S_1=A_1=[A,B]$$
+$$S_2=A_2=[a,b,c]$$
+
+Supongamos, en primer lugar, que 1 juega A. Los valores esperados de jugar sus posibles acciones para el jugador 2 son:
+
+$$VE^2_{(a)}=2p+(1-p)2=2$$
+$$VE^2_{(b)}=2p+(1-p)0=2p$$
+$$VE^2_{(c)}=0p+(1-p)3=1-3p$$
+
+Programando estas funciones en R resulta f\'acil visualizar el VE para el jugador 2:
+<<echo=TRUE, fig=TRUE>>=
+a=function(p){2*p+(1-p)*2}
+b=function(p){2*p+(1-p)*0}
+d=function(p){p*0+(1-p)*3}
+plot(a, ylim=c(0,3.5))
+plot(b,add=TRUE)
+plot(d,add=TRUE)
+@
+
+Punto de corte entre d y a:
+<<echo=TRUE>>=
+t=function(p){(p*0+(1-p)*3)-2}
+(cortead=uniroot(t,c(0,1))$root) #punto de corte entre d y a
+
+@
+
+Punto de corte entre a y c:
+<<echo=TRUE>>=
+g=function(p){(2*p+(1-p)*2)-(2*p+(1-p)*0)}
+(corteab=uniroot(g,c(0,1))$root)
+@
+
+Dando lugar a la siguiente funci\'on de reacci\'on para el jugador 2:
+
+$$\left\{ \begin{array}{c} b, si p<1/3\\ a, si 1/3<p<1\\b,a, si: p=1\end{array}\right. $$
+
+
+Si 1 juega B:
+$$VE^2_{(a)}=6p+(1-p)6=6$$
+$$VE^2_{(b)}=10p+(1-p)0=10p$$
+$$VE^2_{(c)}=0p+(1-p)10=1-10p$$
+
+Graficando el VE para el jugador 2:
+
+<<echo=TRUE, fig=TRUE>>=
+a=function(p){6*p+(1-p)*6}
+b=function(p){10*p+(1-p)*0}
+d=function(p){p*0+(1-p)*10}
+plot(a, ylim=c(0,10))
+plot(b,add=TRUE)
+plot(d,add=TRUE)
+@
+
+Puntos de corte:
+<<echo=TRUE>>=
+k=function(p){(p*0+(1-p)*10)-(6*p+(1-p)*6)}
+(corte1=uniroot(k,c(0,1))$root)
+@
+
+Y:
+<<echo=TRUE>>=
+m=function(p){(10*p+(1-p)*0)-(6*p+(1-p)*6)}
+(corte2=uniroot(m,c(0,1))$root)
+@
+
+Obtenemos la funci\'on de reacci\'on para el jugador 2 cuando el jugador 1 juega B:
+
+$$\left\{ \begin{array}{c} b, si p<0.4 \\ a, si 0.4<p<0.6\\c, si: p>0.6\end{array}\right. $$
+
+As\'i, podemos obtener los Equilibrios de Nash correspondientes a todo el espectro de posibles probabilidades subjetivas p y (1-p):
+
+Para p<1/3; El jugador 2 juega:
+  c si 1 juega A
+  b si 1 juega B
+  
+Puesto que en esta situaci???n A es una estrategia dominante para el jugador 1, el Equilibrio de Nash ser\'ia (c,A).
+
+Para 1/3<p<0.4; Existen 2 equilibrios de Nash: (a,A) y (b,B).
+
+Para 0.4<p<0.6; El jugador 2 juega siempre a y el jugador 1 B; Equilibrio de Nash: (a,B).
+
+Para p>0.6; Equilibrio de Nash: (a,A), (c,B).
+
+
+\subsection{solo el jugador 1 desconoce el tipo del jugador 2}
+
+Si 2 es de tipo x, mejor respuesta de 2:
+$$MR^2_{(A)}=a,b$$
+$$MR^2_{(B)}=b$$
+
+Mejor respuesta de 1:
+$$MR^1_{(a)}=B$$
+$$MR^1_{(b)}=A$$
+$$MR^1_{(c)}=A$$
+
+As\'i, el Equilibrio de Nash si 2 es de tipo x es (b,A)
+
+
+Si 2 es de tipo z, mejor respuesta de 2:
+$$MR^2_{(A)}=c$$
+$$MR^2_{(B)}=c$$
+
+Mejor respuesta de 1:
+$$MR^1_{(a)}=B$$
+$$MR^1_{(b)}=A$$
+$$MR^1_{(c)}=A$$
+
+As\'i, el Equilibrio de Nash si 2 es de tipo z es (C,A)
+
 \section{Ejercicio 7: Competencia Bertrand con informaci\'on incompleta}
 
 Competencia Bertrand con producto homog\'eneo, es decir, $d=1$:
@@ -209,7 +352,16 @@ $${(p_1^*(\underline{c}),p_1^*(\bar{c}),p_2^*)}={(\frac{6a-(4-(1+\gamma))\underl
 
 \section{Ejercicio 8:Subastas}
 \subsection{Sobre cerrado segundo precio.}
-Investigar qu\'e sueder\'ia con la estrategia $b_i^`(v_i)<v_i$.
+Investigar qu\'e sueder\'ia con la estrategia $b_i^`(v_i)<v_i$, es decir, cuando el jugador puja una cantidad de dinero superior a su valoraci\'on.
+
+Se pueden presentar los siguientes casos:
+
+1.-Gana la subasta si $b'_i(v_i)>\bar{b}$, obteniendo un pago de $v_i-b'_i(v_i)<0$.
+
+2.-Gana la subasta si $b'_i(v_i)>\bar{b}$, pero obtiene un pago negativo de $v_i-b'_i(v_i)<0$. Esto sucede cuando $b'_i(v_i)-\bar{b}$ > $v_i-\bar{b}$.
+
+3.-Pierde la subasta si $b'_i(v_i)<\bar{b}$.
+
 \subsection{Sobre cerrado al primer precio}
 
 En este tipo de subastas, el ganador es aquel jugador que ofreciese la puja m\'as alta. El pago ser\'a su ropia oferta. Adem\'as, los jugadores no pueden ver las pujas de los dem\'as.
@@ -269,19 +421,89 @@ Esta expresi\'on denota la relaci\'on existente entre la puja de cada jugador y 
 
 \section{Ejercicio 9:Provisi\'on de bien p\'ublico}
 \subsection{Modificaci\'on de pagos para que ninguno de los dos agentes tenga estrategia dominante.}
+En este ejercicio en un caso de provisión de un bien p\'ublico consideramos: Una familia formada por los individuos 1 y 2 los cuales deben decidir simultaneamente y puede decidir contribuir o no contribuir, $\{C,N\}_i, i=1,2$. El bien p\'ublico se suministrar\'a si alguno de los individuos o \'ambos eligen contribuir. Contribuir a financiar el bien p\'ublio le supone al jugador 1 un coste de $c_1$ y al individuo 2 un coste que puede ser $\overline{c_2}$ o $\underline{c_2}$. El individuo 2 los costes que le supone al individuo 1 pero este \'ultimo no conoce los costes para le individuo 2(lo único que sabe es que ouede ser $\overline{c_2}$ con probabilidad $\frac{1}{3}$ o $\underline{c_2}$ con probabilidad $\frac{2}{3}$).
+
+\hspace{2cm}
+
+La tarea propuesta es considerando el caso de los apuntes, modificar los pagos (los cuales mostraremos tabulados) para que el individuo 2 no posea una estrategia dominante como es la de contribuir. Para eso modificamos los pagos de la forma:
+
+\hspace{2cm}
+
+\begin{table}[tbp]
+\centering
+\begin{minipage}[b]{0.5\linewidth}
+\begin{tabular}{|l|r|r|}
+\hline
+\backslashbox{1}{2} & C & N \\
+\hline
+C & $1-c_1,1-\underline{c_2}$ & 1-$c-1$,1\\
+\hline
+N & 1,1-$\overline{c_2}$ & 0,2\\
+\hline
+\end{tabular}
+\caption{Jugador 2 del tipo $\overline{c_2}$ }
+\end{minipage}
+
+\hspace{0.5cm} 
+
+\begin{minipage}[b]{0.5\linewidth}
+\begin{tabular}{|l|r|r|}
+\hline
+\backslashbox{1}{2} & C & N \\
+\hline
+C & 1-$c_1$,1-$\underline{c_2}$ & 1-$c_1$,1\\
+\hline
+N & 1,1-$\underline{c_2}$ & 0,0\\
+\hline
+\end{tabular}
+\caption{Jugador 2 del tipo $\underline{c_2}$}
+\end{minipage}
+\end{table}
+
+El principal cambio realizado es el pago de 2 cuando es de tipo $\overline{c_2}$ y 1 elige no contribuir. Con este cambio el individuo 2 cunando es de tipo $\overline{c_2}$ tendr\'a la estrategia dominante de no contribuir.
+Con estes pagos si analizamos los valores esperados con la finalidad de obtener la mejor respuestas del individuo 2 vemos que:
+
+\hspace{0.5cm} 
+
+Si el individuo 2 es de tipo $\overline{c_2}$:
+
+$$E(u_2,\overline{c_2},1C)\Longrightarrow (1-c \overline{c_2})\gamma+(1-\gamma)$$
+$$E(u_2,\overline{c_2},1N)\Longrightarrow (1-c \overline{c_2})\gamma+2(1-\gamma)$$
+
+Si el individuo 2 es de tipo $\underline{c_2}$:
+
+$$E(u_2,\underline{c_2},1C)\Longrightarrow (1-c \underline{c_2})\gamma+(\gamma-1)$$
+$$E(u_2,\underline{c_2},1N)\Longrightarrow (1-c \underline{c_2})\gamma+0$$
+
+Vemos con esto los valores esperados el individuo 2 tendr\'a una estrategia dominante dependiente de su tipo.
+
+Ahora analizaremos los pagos esperados del individuo 1, que asigna una probabilidad $\mu$ a que le individuo 2 sea de tipo $\bar{c_2}$ y elija N y una probabbilidad $\lambda$ a que el ndividuo 2 sea de tipo $\underline{c_2}$ y elija C.
+
+Si el individuo 1 elige C 
+
+$$E(u_1,C)=\frac{2}{3}(1-\mu)(1-c_1)+\frac{1}{3}\lambda(1-c_1)+\frac{2}{3}(1-c_1)+\frac{1}{3}(1-\lambda)(1-c_1)=1-c_1$$
+
+Si el individuo q elije N
+
+$$E(u_1,N)=\frac{2}{3}(1-\mu)(1-c_1)+\frac{1}{3}\lambda$$
+
+Las mejores respestas del individuo 1 son:
+
+$$\left\{ \begin{array}{c} C si c_1<\frac{1}{3}(2\mu-\lambda+1) \\ N si c_1>\frac{1}{3}(2\mu-\lambda+1)\end{array}\right. $$
+
+
+Por lo tanto tenemos que si $c$ es suficientemente bajo
+
+-Si el individuo 1 toma la estrategia  i$S_1^*=C$ el individuo 2 tiene las estrategias $S_2^*(\underline{c_2}=C$ $$S_2^*(\overline{c_2}=N$$. Si $S_1^*=N$ 
+
+-Si el individuo 1 toma la estrategia  i$S_1^*=N$ el individuo 2 tiene las estrategias $S_2^*(\underline{c_2}=C$ $$S_2^*(\overline{c_2}=N$$. Si $S_1^*=N$ 
+
+
+Y si $c$ es suficientemente grande y el individuo 2 es de tipo $\overline{c_2}$ ninguno de los individuos optar\'a por contribuir.
+
+
+
 \subsection{Generalizar el modelo con el sistema de creencias $(p,1-p)$.}
-\section{Ejercicio 10:}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
