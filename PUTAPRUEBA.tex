@@ -124,7 +124,7 @@ Por lo tanto, el precio ser\'a mayor que el coste marginal generando beneficios 
 
 \section{Ejercicio 5:}
 
-En este ejercicio intentaremos mostrar en juegos dinámicos de Cournot-Stackelberg mover primero no es siempre una ventaja. Vamos a emplear un mode similar al del Ejercicio 1, pero con costes crecientes de la forma $cq_i^3$.
+En este ejercicio intentaremos mostrar en juegos dinámicos de Cournot-Stackelberg mover primero no es siempre una ventaja. Vamos a emplear un modelo similar al del Ejercicio 3, pero con costes crecientes de la forma $cq_i^3$.
 
 \vspace{5mm}
 
@@ -140,7 +140,7 @@ obtenemos como soluci\'on:
 
 $$q_2=\frac{2b+\sqrt{4b^2+12c(-q_1b+a)}}{6c}$$
 
-esta es la cantidad de producci\'on que maximiza los beneficios de la empresa dos. Ahora maximizaremos los beneficios de la empresa uno considerando la produci\'on de la empresa dos que maximiza sus pripios beneficios $(q_2)$:
+Esta es la cantidad de producci\'on que maximiza los beneficios de la empresa 2. Ahora maximizaremos los beneficios de la empresa uno considerando la produci\'on de la empresa dos que maximiza sus pripios beneficios $(q_2)$:
 
 $$max\thinspace \pi_1(q_1,q_2)=aq_1-b(q_1+\frac{2b+\sqrt{4b^2+12c(-q_1b+a)}}{6c}q_1-cq^3_1$$
 
@@ -181,9 +181,9 @@ Para resolver esta ecuaci\'on anterior utilizaremos el siguiente Script de R:
 
 
 
-Hemos dados valores aleatorios a las variables a, b y c y obtenemos la raiz de $q_1$. LoS valores otorgados a las variables son aleatorios pero tienen cierta coherencia. a (m\'aima disposici\'on a pagar) es mayor que el coste marginal c. Por otro lado, como $b=0,2$ la pendiente de la demanda es muy pequeña por lo que la eslasticidade precio-demanda es muy grande.
+Hemos dados valores aleatorios a las variables $a$, $b$ y $c$ y obtenemos la raiz de $q_1$. Los valores otorgados a las variables son aleatorios pero tienen cierta coherencia. La variable $a$ (m\'aima disposici\'on a pagar) es mayor que el coste marginal $c$. Por otro lado, como $b=0,2$ la pendiente de la demanda es muy pequeña por lo que la eslasticidade precio-demanda es muy grande.
 
-Vemos de esta manera que la produci\'on de la empresa 1 ($q_1=0.45$) es inferior a la de la empresa 2 ($Q_2=0.83$) (supuesto que las empressas son homogeneass)
+Vemos de esta manera que la produci\'on de la empresa 1 ($q_1=0.45$) es inferior a la de la empresa 2 ($Q_2=0.83$) (supuesto que las empressas son homogeneass) como queriamos demostrar.
 
 
 
@@ -482,12 +482,24 @@ En este ejercicio en un caso de provisión de un bien p\'ublico consideramos: Un
 \hspace{2cm}
 
 La tarea propuesta es considerando el caso de los apuntes, modificar los pagos (los cuales mostraremos tabulados) para que el individuo 2 no posea una estrategia dominante como es la de contribuir. Para eso modificamos los pagos de la forma:
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+\backslashbox{1}{2} & C & N \\
+\hline
+C & 1-$c_1$,1-$\underline{c_2}$ & 1-$c_1$,1\\
+\hline
+N & 1,1-$\underline{c_2}$ & 0,0\\
+\hline
+\end{tabular}
+\caption{Jugador 2 del tipo $\underline{c_2}$ }
+\label{tabla:sencilla}
+\end{center}
+\end{table}
 
-\hspace{2cm}
-
-\begin{table}[tbp]
-\centering
-\begin{minipage}[b]{0.5\linewidth}
+\begin{table}[htbp]
+\begin{center}
 \begin{tabular}{|l|r|r|}
 \hline
 \backslashbox{1}{2} & C & N \\
@@ -498,23 +510,11 @@ N & 1,1-$\overline{c_2}$ & 0,2\\
 \hline
 \end{tabular}
 \caption{Jugador 2 del tipo $\overline{c_2}$ }
-\end{minipage}
-
-\hspace{0.5cm} 
-
-\begin{minipage}[b]{0.5\linewidth}
-\begin{tabular}{|l|r|r|}
-\hline
-\backslashbox{1}{2} & C & N \\
-\hline
-C & 1-$c_1$,1-$\underline{c_2}$ & 1-$c_1$,1\\
-\hline
-N & 1,1-$\underline{c_2}$ & 0,0\\
-\hline
-\end{tabular}
-\caption{Jugador 2 del tipo $\underline{c_2}$}
-\end{minipage}
+\label{tabla:sencilla}
+\end{center}
 \end{table}
+
+
 
 El principal cambio realizado es el pago de 2 cuando es de tipo $\overline{c_2}$ y 1 elige no contribuir. Con este cambio el individuo 2 cunando es de tipo $\overline{c_2}$ tendr\'a la estrategia dominante de no contribuir.
 Con estes pagos si analizamos los valores esperados con la finalidad de obtener la mejor respuestas del individuo 2 vemos que:

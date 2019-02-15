@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.2.11)  14 FEB 2019 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.2.11)  15 FEB 2019 13:40
 entering extended mode
 **./PUTAPRUEBA.tex
 (PUTAPRUEBA.tex
@@ -287,6 +287,12 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 
 LaTeX Warning: Label `tabla:sencilla' multiply defined.
 
+
+LaTeX Warning: Label `tabla:sencilla' multiply defined.
+
+
+LaTeX Warning: Label `tabla:sencilla' multiply defined.
+
 )
 \openout1 = `PUTAPRUEBA.aux'.
 
@@ -431,7 +437,7 @@ Overfull \hbox (29.02469pt too wide) in paragraph at lines 190--190
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 194.
-
+[7 <./PUTAPRUEBA-004.pdf>]
 Overfull \hbox (16.70871pt too wide) in paragraph at lines 227--227
 []\T1/aer/bx/n/12 Los dos jugadores tienen información incompleta
  []
@@ -441,13 +447,12 @@ Overfull \hbox (38.82405pt too wide) in paragraph at lines 227--227
 \T1/aer/bx/n/12 y simétrica (por lo tanto ambos asignan las probabilidades
  []
 
-[7 <./PUTAPRUEBA-004.pdf>]
 <PUTAPRUEBA-005.pdf, id=69, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-005.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-005.pdf>
 Package pdftex.def Info: PUTAPRUEBA-005.pdf  used on input line 250.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
- [8] [9 <./PUTAPRUEBA-005.pdf>]
+[8] [9 <./PUTAPRUEBA-005.pdf>]
 <PUTAPRUEBA-008.pdf, id=81, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-008.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-008.pdf>
@@ -512,11 +517,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4032 strings out of 494865
  62638 string characters out of 3178257
- 121642 words of memory out of 3000000
+ 119643 words of memory out of 3000000
  7599 multiletter control sequences out of 15000+200000
  26119 words of font info for 58 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 44i,15n,42p,758b,381s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,14n,42p,758b,377s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b></home/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 ></home/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -540,7 +545,7 @@ miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsltt10.pfb></home/xacome
 miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/xacome/.m
 iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb></home/xacome/.mi
 ktex/texmfs/install/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on PUTAPRUEBA.pdf (16 pages, 303863 bytes).
+Output written on PUTAPRUEBA.pdf (16 pages, 304049 bytes).
 PDF statistics:
  184 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
