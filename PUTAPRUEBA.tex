@@ -1,18 +1,123 @@
 \documentclass{article}
-
+\title{Comportamiento estrat\'egico}
+\author{Pablo Coello\\ pcoello@gmail.com \and X\'acome Laya\\ xacomelide@gmail.com}
+\date{15/02/19}
 \usepackage{Sweave}
+\usepackage{synttree} 
 \usepackage{slashbox}
 \usepackage{subfig}
 \begin{document}
-\input{PUTAPRUEBA-concordance}
-\input{PUTAPRUEBA-concordance}
-
+\maketitle
 \abstract{Tareas para entregar de la asignatura An\'alisis del Comportamiento Estrat\'egico. M\'aster en Econom\'ia.}
 
-\section{Ejercicio 1:}
-Encontrar equilibrios de Nash
+\newpage
+\tableofcontents
+\newpage
+\input{PUTAPRUEBA-concordance}
+\input{PUTAPRUEBA-concordance}
 
-\section{Ejercicio 2:}
+
+\section{Ejercicio 1: Buscar equilibrios de Nash y poner en forma extensiva los siguientes juegos}
+\subsection{Dilema del prisionero}
+Forma normal:
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+1/2 & C & N\\
+\hline \hline
+C & -3,-3 & 0,-4 \\ \hline
+N & -4,0 & -1,-1 \\ \hline
+
+\end{tabular}
+\caption{Dilema del prisionero}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+Forma extensiva:
+\begin{center}
+\synttree[1[2[$(-3,-3)$][$(0,-4)$]][2[$(-4,0)$][$(-1,-1)$]]]
+\end{center}
+
+O, alternativamente:
+\begin{center}
+\synttree[2[1[$(-3,-3)$][$(0,-4)$]][1[$(-4,0)$][$(-1,-1)$]]]
+\end{center}
+
+En este juego el equilibrio de Nash es la combinaci\'on de estrategias para el jugador 1 y el jugador 2 (C,C), en la que ambos jugadores deciden confesar.
+
+\subsection{Batalla de los sexos}
+Forma normal:
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+1/2 & B & C\\
+\hline \hline
+B & 2,1 & 0,0 \\ \hline
+C & -1,-1 & 1,2 \\ \hline
+
+\end{tabular}
+\caption{Batalla de los sexos}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+Forma extensiva:
+\begin{center}
+\synttree[1[2[$(2,1)$][$(-1,-1)$]][2[$(0,0)$][$(1,2)$]]]
+\end{center}
+O, alternativamente:
+\begin{center}
+\synttree[2[1[$(2,1)$][$(-1,-1)$]][1[$(0,0)$][$(1,2)$]]]
+\end{center}
+
+En este juego,  existen dos equilibrios de Nash que corresponden con las combinaciones de estrategias para el jugador 1 y el jugador 2 (B,B) y (C,C), en los que ambos jugadores deciden asistir al ballet o al cine correspondientemente.
+
+\subsection{Estudiar la forma de de representar JNC con tres jugadores}
+
+La siguiente figura corresponde a un juego respresentado en su forma extensiva:
+\begin{center}
+\synttree[1[2[3[(3,1,5)][(2,6,3)]][(2,6,2)]][3[3[(4,5,0)][(3,2,5)]][1[(4,5,0)][(1,3,6)]]]]
+\end{center}
+Y esta es su correspondiente forma normal, en la que las estrategias del jugador uno est\'an descritas por las filas, las del jugador 3 en columnas y las estrategias del jugador 2 en matrices:
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+1/3 & eg & eh & fg & fh \\
+\hline \hline
+al & (3,1,5) & (2,6,3) & (3,1,5) & (2,6,3) \\ \hline
+ak & (3,1,5) & (2,6,3) & (3,1,5) & (2,6,3) \\ \hline
+bl & (4,5,0) & (3,2,5) & (4,5,0) & (3,2,5) \\ \hline
+bk & (4,5,0) & (3,2,5) & (4,5,0) & (3,2,5) \\ \hline
+\end{tabular}
+\caption{Estrategia c del jugador 2}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+1/3 & eg & eh & fg & fh \\
+\hline \hline
+al & (2,6,2) & (2,6,2) & (2,6,2) & (2,6,2) \\ \hline
+ak & (2,6,2) & (2,6,2) & (2,6,2) & (2,6,2) \\ \hline
+bl & (4,5,0) & (3,2,5) & (4,5,0) & (3,2,5) \\ \hline
+bk & (4,5,0) & (3,2,5) & (4,5,0) & (3,2,5) \\ \hline
+\end{tabular}
+\caption{Estrategia d del jugador 2}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+
+
+\section{Ejercicio 2: Juegos de Cournot}
 
 En el siguiente Juego a la Cournot la demanda de mercado que enfrentan n empresas es estrictamente convexa con la forma
 $p(q)=\frac{a}{Q^\alpha}$, donde $Q=\sum_{i=1}^n q_i$. Los consumidores se asumen pasivos y vienen descritos por $p(Q)=a-bQ$.
@@ -25,44 +130,50 @@ Si consideramos que el n\'umero de empresas \textbf{n} es 2, podemos calcular la
 podemos emplear derivadas parciales para obtener la condici\'on de primer orden:
   $$\frac{\partial(\pi_1(q_1,q_2)}{\partial q_1} = \frac{\partial}{\partial q_1} (\frac{aq_1}{cq_1+q_2)^\alpha})$$
   derivando podemos llegamos a la expresi\'on:
-  $$-a\alpha q_1(q_1+q_2)^{-(\alpha+1)}+a(q_1+q_2)^{-\alpha}-c=0$$
-  operando matematicamente podemos obtener $q_2=q_2(q_1)$:
-$$q_2=\sqrt{\frac{\frac{-c}{a}}{\alpha q_1-1}}^{\frac{1}{\alpha-1}}$$
-Esta funci\'on puede ser expresada en el espacio \{$q_1,q_2$\} como se aprecia en la siguiente figura:
-
+  $$-a(q_1+q_2)^{-(\alpha+1)}(\alpha q_1+q_1+q_2)-c=0$$
+  
+Para resolver la ecuación anterior asignamos valores arbitrarios as variables (la disposici\'on a pagar superior al coste marginal,a>c). Si suponemos que las empresas producen un bien id\'entico $q_1=q_2$ podemos obterner una solución de la produci\'on con un programa de c\'alculo como R:
 
 \begin{Schunk}
 \begin{Sinput}
-> a=0.4; c=0.2; alfa=0.5
-> q1=seq(0,0.999,by=0.01)
-> q2=-q1+sqrt((-a/c)/(alfa*q1-1))
-> plot(q1,q2)
-\end{Sinput}
-\end{Schunk}
-\includegraphics{PUTAPRUEBA-001}
-
-
-
-Para resolver asignamos valores arbitrarios as variables (a>c). Vemos unha funci\'on decreciente. Ahora si sumonemos que las empresas producen un bien id\'entico $q_1=q_2$ podemos obterner una solución de la produci\'on con un programa de c\'alculo como R:
-
-\begin{Schunk}
-\begin{Sinput}
-> p1=function(x){2*x-(sqrt((-a/c)/(alfa*x-1)))^(alfa-1)}
+> a=0.9;co=0.3;alfa=0.5
+> p1=function(x){(a*(2*x)^-(alfa+1))*(-alfa*x+2*x)-co}
 > plot(p1) 
-> o1=uniroot(p1,c(0.1,1))
+> o1=uniroot(p1,c(0.1,2050))
 > (raiz1=o1$root)
 \end{Sinput}
 \begin{Soutput}
-[1] 0.3977708
+[1] 2.531251
+\end{Soutput}
+\end{Schunk}
+\includegraphics{PUTAPRUEBA-001}
+
+Vemos una función decreciente con el coste y nos arroja un resultado de produción $q_1=q_2=q=2.53$
+
+\subsection{Empresas producen con $C_i(q_i)=\frac{c}{2}q_i^2$}
+
+Suponiendo costes cuadr\'aticos podemos llegar facilmente a la expresión que maximiza los beneficios de la empresa 1:
+
+  $$-a(q_1+q_2)^{-(\alpha+1)}(\alpha q_1+q_1+q_2)-cq_1=0$$
+
+Resolviendo la euación anterior con la suposici\'onde que las empreses producen bienes hoogeneos obtenemos:
+  
+\begin{Schunk}
+\begin{Sinput}
+> a=0.9;co=0.3;alfa=0.5
+> p2=function(x){(a*(2*x)^-(alfa+1))*(-alfa*x+2*x)-co*x}
+> plot(p2) 
+> o2=uniroot(p2,c(0.1,2050))
+> (raiz2=o2$root)
+\end{Sinput}
+\begin{Soutput}
+[1] 1.362841
 \end{Soutput}
 \end{Schunk}
 \includegraphics{PUTAPRUEBA-002}
 
-
-
-Vemos que el programa nos arroja un valor de la produción de 0.399 cuando los bienes son homogeneos.
-
-\subsection{Empresas producen con $C_i(q_i)=\frac{c}{2}q_i^2$}
+Como vemos según crece la funci\'on de coses podemos ver que las empresas con bienes homogeneos producir\'an menos 
+$$q_{cq_i}>q_{\frac{c}{2}q_i^2}$$
 
 \section{Ejercicio 3: Calcular ECN en condiciones generales} 
 
@@ -120,9 +231,11 @@ $$\frac{1}{3}a+\frac{2}{3}c>c$$
 
 Por lo tanto, el precio ser\'a mayor que el coste marginal generando beneficios extraordinarios para las empresas.
 
-\section{Ejercicio 4:}
+\section{Ejercicio 4: }
 
-\section{Ejercicio 5:}
+El jugador con un coste marginal m\'as bajo tendr\'a como estrategia dominante fijar un precio $p=c_2-\epsilon$, de tal forma que al jugador con un coste marginal superior no le sea rentable permanecer en el mercado.
+
+\section{Ejercicio 5: Juegos din\'amico de Cournot-Stackelberg}
 
 En este ejercicio intentaremos mostrar en juegos dinámicos de Cournot-Stackelberg mover primero no es siempre una ventaja. Vamos a emplear un modelo similar al del Ejercicio 3, pero con costes crecientes de la forma $cq_i^3$.
 
@@ -152,7 +265,8 @@ Para resolver esta ecuaci\'on anterior utilizaremos el siguiente Script de R:
 \begin{Schunk}
 \begin{Sinput}
 > a=0.6 ;b=0.2 ;co=0.4 
-> p1=function(x){a-2*b*x+2*b^2/(6*co)+(b/(6*co)*(x*(a+2*b*(9*x+2)))/
+> p1=function(x){a-2*b*x+2*b^2/
++     (6*co)+(b/(6*co)*(x*(a+2*b*(9*x+2)))/
 + +                                        (sqrt((x^2)*(a+4*(3*b*x+b)))))-3*x^2}
 > plot(p1) 
 > o1=uniroot(p1,c(0.1,1))
@@ -187,7 +301,7 @@ Vemos de esta manera que la produci\'on de la empresa 1 ($q_1=0.45$) es inferior
 
 
 
-\section{Ejercicio 6:Generalizaci\'on de juego est\'atico con informaci\'on incompleta}
+\section{Ejercicio 6: Generalizaci\'on de juego est\'atico con informaci\'on incompleta}
 Consideremos las siguientes situaci\'on:
 \begin{table}[htbp]
 \begin{center}
@@ -400,12 +514,14 @@ $$p_2(c;p_1(\underline{c}),p_1(\bar{c}))=\frac{a+c+(\gamma p_1(\underline{c})+(1
 
 Resolviendo, el EB de el duopolio con bien homog\'eneo e informaci\'on incompleta de Bertrand es el perfil de estrategias:
 
-$${(p_1^*(\underline{c}),p_1^*(\bar{c}),p_2^*)}={(\frac{6a-(4-(1+\gamma))\underline{c}+(1-\gamma)\bar{c}+c}{6},\frac{6a+(4-\gamma)\bar{c}+\gamma \underline{c}+2c}{6},\frac{3a+2c+(\gamma \underline{c}+(1-\gamma)\bar{c})}{3})}$$
+$${(p_1^*(\underline{c}),p_1^*(\bar{c}),p_2^*)}=$$
+\hspace{2cm}
+$${(\frac{6a-(4-(1+\gamma))\underline{c}+(1-\gamma)\bar{c}+c}{6},\frac{6a+(4-\gamma)\bar{c}+\gamma \underline{c}+2c}{6},\frac{3a+2c+(\gamma \underline{c}+(1-\gamma)\bar{c})}{3})}$$
 
 
 
 
-\section{Ejercicio 8:Subastas}
+\section{Ejercicio 8: Subastas}
 \subsection{Sobre cerrado segundo precio.}
 Investigar qu\'e sueder\'ia con la estrategia $b_i^`(v_i)<v_i$, es decir, cuando el jugador puja una cantidad de dinero superior a su valoraci\'on.
 
@@ -474,7 +590,7 @@ Esta expresi\'on denota la relaci\'on existente entre la puja de cada jugador y 
 
 
 
-\section{Ejercicio 9:Provisi\'on de bien p\'ublico}
+\section{Ejercicio 9: Provisi\'on de bien p\'ublico}
 \subsection{Modificaci\'on de pagos para que ninguno de los dos agentes tenga estrategia dominante.}
 
 En este ejercicio en un caso de provisión de un bien p\'ublico consideramos: Una familia formada por los individuos 1 y 2 los cuales deben decidir simultaneamente y puede decidir contribuir o no contribuir, $\{C,N\}_i, i=1,2$. El bien p\'ublico se suministrar\'a si alguno de los individuos o \'ambos eligen contribuir. Contribuir a financiar el bien p\'ublio le supone al jugador 1 un coste de $c_1$ y al individuo 2 un coste que puede ser $\overline{c_2}$ o $\underline{c_2}$. El individuo 2 los costes que le supone al individuo 1 pero este \'ultimo no conoce los costes para le individuo 2(lo único que sabe es que ouede ser $\overline{c_2}$ con probabilidad $\frac{1}{3}$ o $\underline{c_2}$ con probabilidad $\frac{2}{3}$).
@@ -482,6 +598,7 @@ En este ejercicio en un caso de provisión de un bien p\'ublico consideramos: Un
 \hspace{2cm}
 
 La tarea propuesta es considerando el caso de los apuntes, modificar los pagos (los cuales mostraremos tabulados) para que el individuo 2 no posea una estrategia dominante como es la de contribuir. Para eso modificamos los pagos de la forma:
+
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{|l|r|r|}
@@ -493,7 +610,7 @@ C & 1-$c_1$,1-$\underline{c_2}$ & 1-$c_1$,1\\
 N & 1,1-$\underline{c_2}$ & 0,0\\
 \hline
 \end{tabular}
-\caption{Jugador 2 del tipo $\underline{c_2}$ }
+\caption{Jugador 2 del tipo $\underline{c_2}$ con probabilidad $\frac{1}{3}$ }
 \label{tabla:sencilla}
 \end{center}
 \end{table}
@@ -509,7 +626,7 @@ C & $1-c_1,1-\underline{c_2}$ & 1-$c-1$,1\\
 N & 1,1-$\overline{c_2}$ & 0,2\\
 \hline
 \end{tabular}
-\caption{Jugador 2 del tipo $\overline{c_2}$ }
+\caption{Jugador 2 del tipo $\overline{c_2}$ con probabilidad $\frac{2}{3}$ }
 \label{tabla:sencilla}
 \end{center}
 \end{table}
@@ -535,11 +652,11 @@ Vemos con esto los valores esperados el individuo 2 tendr\'a una estrategia domi
 
 Ahora analizaremos los pagos esperados del individuo 1, que asigna una probabilidad $\mu$ a que le individuo 2 sea de tipo $\bar{c_2}$ y elija N y una probabbilidad $\lambda$ a que el ndividuo 2 sea de tipo $\underline{c_2}$ y elija C.
 
-Si el individuo 1 elige C 
+Si el individuo 1 elige C:
 
 $$E(u_1,C)=\frac{2}{3}(1-\mu)(1-c_1)+\frac{1}{3}\lambda(1-c_1)+\frac{2}{3}(1-c_1)+\frac{1}{3}(1-\lambda)(1-c_1)=1-c_1$$
 
-Si el individuo q elije N
+Si el individuo q elige N:
 
 $$E(u_1,N)=\frac{2}{3}(1-\mu)(1-c_1)+\frac{1}{3}\lambda$$
 
@@ -561,14 +678,59 @@ Y si $c$ es suficientemente grande y el individuo 2 es de tipo $\overline{c_2}$ 
 
 \subsection{Generalizar el modelo con el sistema de creencias $(p,1-p)$.}
 
-\
+Si generalizamos a una probabilidade p nos encontramos con los siguientes pagos:
 
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+\backslashbox{1}{2} & C & N \\
+\hline
+C & 1-$c_1$,1-$\underline{c_2}$ & 1-$c_1$,1\\
+\hline
+N & 1,1-$\underline{c_2}$ & 0,0\\
+\hline
+\end{tabular}
+\caption{Jugador 2 del tipo $\underline{c_2}$ con probabilidad (1-p)}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
 
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|r|r|}
+\hline
+\backslashbox{1}{2} & C & N \\
+\hline
+C & $1-c_1,1-\underline{c_2}$ & 1-$c-1$,1\\
+\hline
+N & 1,1-$\overline{c_2}$ & 0,0\\
+\hline
+\end{tabular}
+\caption{Jugador 2 del tipo $\overline{c_2}$ con probabilidad p }
+\label{tabla:sencilla}
+\end{center}
+\end{table}
 
+Los pagos esperados de 2, considerando que conoce su tipo ser\'an
+$$E(u_2,\overline{c_2},1C)\Longrightarrow (1-\overline{c_2})\gamma+(1-\gamma)$$
+$$E(u_2,\overline{c_2},1N)\Longrightarrow (1-\overline{c_2})\gamma$$
 
+El cuel tendr\'an como estrategia dominante contribuir.
 
+Los pagos esperados de 1, asignando este una probabilidad p a que 2 sea de tipo $\overline{c_2}$ ser\'an:
 
+Si el individuo 1 elige C:
 
+$$E(u_1,C)=p(1-\mu)(1-c_1)+(1-p)\lambda(1-c_1)+p(1-c_1)+(1-p)(1-\lambda)(1-c_1)=1-c_1$$
 
+Si el individuo 1 elige N:
 
+$$E(u_1,N)=p(1-\mu)(1-c_1)+(1-p)\lambda$$
+
+as mejores respestas del individuo 1 son:
+
+$$\left\{ \begin{array}{c} C si c_1<(1-p)(2\mu-\lambda+1) \\ N si c_1>(1-p)(2\mu-\lambda+1)\end{array}\right. $$
+
+Como vemos, la mejor respuesta del individuo uno depender\'a del valor que este asigne a p y as\'i conocer que costes son para \'el suficientemente pequeños y cuales suficientemente elevados.
 \end{document}

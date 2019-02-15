@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.2.11)  15 FEB 2019 13:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.2.11)  15 FEB 2019 16:55
 entering extended mode
 **./PUTAPRUEBA.tex
 (PUTAPRUEBA.tex
@@ -240,13 +240,45 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 (/home/xacome/.miktex/texmfs/install/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 ))))
+(/home/xacome/.miktex/texmfs/install/tex/latex/synttree/synttree.sty
+\MTr@level=\count91
+\MTr@numchildren=\count92
+\MTr@maxlevel=\count93
+\MTr@mybranchmult=\count94
+\MTr@labelbox=\box28
+\MTr@treebox=\box29
+\MTr@treev=\count95
+\MTr@treew=\count96
+\MTr@treeheight=\count97
+\MTr@treedepth=\count98
+\MTr@branchmult=\count99
+\MTr@labeldepth=\count100
+\MTr@labelheight=\count101
+\MTr@labelhalfwidth=\count102
+\MTr@morex=\count103
+\MTr@parenty=\count104
+\MTr@picwidth=\count105
+\MTr@picheight=\count106
+\MTr@templength=\skip43
+\MTr@loopcnta=\count107
+\MTr@tempcnta=\count108
+\MTr@tempcntb=\count109
+\MTr@tempcntc=\count110
+\MTr@branchheight=\count111
+\MTr@trianglemultright=\count112
+\MTr@trianglemultleft=\count113
+\MTr@lineoffset=\count114
+\MTr@minheight=\skip44
+\MTr@childsidesep=\count115
+\MTr@childattachsep=\count116
+)
 (/home/xacome/.miktex/texmfs/install/tex/latex/slashbox/slashbox.sty
 slashbox style by K.Yasuoka, May 1993.
-\@slashboxa=\box28
-\@slashboxb=\box29
-\@slashboxc=\box30
-\@slashboxwd=\count91
-\@slashboxht=\count92
+\@slashboxa=\box30
+\@slashboxb=\box31
+\@slashboxc=\box32
+\@slashboxwd=\count117
+\@slashboxht=\count118
 \@slashsepl=\dimen105
 \@slashsepr=\dimen106
 ) (/home/xacome/.miktex/texmfs/install/tex/latex/subfig/subfig.sty
@@ -266,24 +298,42 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen112
 \caption@hangindent=\dimen113
 )
-\c@caption@flags=\count93
-\c@ContinuedFloat=\count94
+\c@caption@flags=\count119
+\c@ContinuedFloat=\count120
 )
-\c@KVtest=\count95
-\sf@farskip=\skip43
+\c@KVtest=\count121
+\sf@farskip=\skip45
 \sf@captopadj=\dimen114
-\sf@capskip=\skip44
-\sf@nearskip=\skip45
-\c@subfigure=\count96
-\c@subfigure@save=\count97
-\c@lofdepth=\count98
-\c@subtable=\count99
-\c@subtable@save=\count100
-\c@lotdepth=\count101
-\sf@top=\skip46
-\sf@bottom=\skip47
+\sf@capskip=\skip46
+\sf@nearskip=\skip47
+\c@subfigure=\count122
+\c@subfigure@save=\count123
+\c@lofdepth=\count124
+\c@subtable=\count125
+\c@subtable@save=\count126
+\c@lotdepth=\count127
+\sf@top=\skip48
+\sf@bottom=\skip49
 )
 (PUTAPRUEBA.aux
+
+LaTeX Warning: Label `tabla:sencilla' multiply defined.
+
+
+LaTeX Warning: Label `tabla:sencilla' multiply defined.
+
+
+LaTeX Warning: Label `tabla:sencilla' multiply defined.
+
+
+LaTeX Warning: Label `tabla:sencilla' multiply defined.
+
+
+LaTeX Warning: Label `tabla:sencilla' multiply defined.
+
+
+LaTeX Warning: Label `tabla:sencilla' multiply defined.
+
 
 LaTeX Warning: Label `tabla:sencilla' multiply defined.
 
@@ -296,37 +346,37 @@ LaTeX Warning: Label `tabla:sencilla' multiply defined.
 )
 \openout1 = `PUTAPRUEBA.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 9.
  (/home/xacome/.miktex/texmfs/install/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    ... okay on input line 9.
 
 (/home/xacome/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
+\scratchcounter=\count128
 \scratchdimen=\dimen115
-\scratchbox=\box31
-\nofMPsegments=\count103
-\nofMParguments=\count104
+\scratchbox=\box33
+\nofMPsegments=\count129
+\nofMParguments=\count130
 \everyMPshowfont=\toks15
-\MPscratchCnt=\count105
+\MPscratchCnt=\count131
 \MPscratchDim=\dimen116
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
 \everyMPtoPDFconversion=\toks16
 ) (/home/xacome/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -378,150 +428,217 @@ G,.JBIG2,.JB2,.eps]
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 10.
+ [1
 
-(PUTAPRUEBA-concordance.tex) (PUTAPRUEBA-concordance.tex)
+{/home/xacome/.miktex/texmfs/data/pdftex/config/pdftex.map}] (PUTAPRUEBA.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 18.
+(Font)              <9> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 18.
+(Font)              <5> on input line 2.
+
+Overfull \hbox (10.01338pt too wide) in paragraph at lines 13--13
+ [] []\T1/aer/bx/n/9 Ejercicio 6: Generalización de juego estático con informac
+ión 
+ []
+
+
+Overfull \hbox (1.46791pt too wide) in paragraph at lines 14--14
+ [][] []\T1/aer/m/n/9 Los dos jugadores tienen información incompleta y simétri
+ca 
+ []
+
+
+Overfull \hbox (24.46552pt too wide) in paragraph at lines 16--16
+ [] []\T1/aer/bx/n/9 Ejercicio 7: Competencia Bertrand con información incomple
+ta []  
+ []
+
+)
+\tf@toc=\write4
+\openout4 = `PUTAPRUEBA.toc'.
+
+ [2] (PUTAPRUEBA-concordance.tex) (PUTAPRUEBA-concordance.tex)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 18.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 20.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 20.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 35.
+(Font)              <7> on input line 25.
+\MTr@childibox=\box34
+\MTr@childix=\count134
+\MTr@childiy=\count135
+\MTr@childiv=\count136
+\MTr@childiw=\count137
+\MTr@childiheight=\count138
+\MTr@childidepth=\count139
+\MTr@childibranchmult=\count140
+\MTr@childipicheight=\count141
+\MTr@childitriangle=\count142
+\MTr@childiibox=\box35
+\MTr@childiix=\count143
+\MTr@childiiy=\count144
+\MTr@childiiv=\count145
+\MTr@childiiw=\count146
+\MTr@childiiheight=\count147
+\MTr@childiidepth=\count148
+\MTr@childiibranchmult=\count149
+\MTr@childiipicheight=\count150
+\MTr@childiitriangle=\count151
+ [3] [4]
+Overfull \hbox (16.09645pt too wide) in paragraph at lines 135--136
+\T1/aer/m/n/9 variables (la disposición a pagar superior al coste marginal,a>c)
+. Si suponemos
+ []
+
+LaTeX Font Info:    Try loading font information for T1+aett on input line 138.
 
 (/home/xacome/.miktex/texmfs/install/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-<PUTAPRUEBA-001.pdf, id=3, 433.62pt x 433.62pt>
+<PUTAPRUEBA-001.pdf, id=28, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-001.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-001.pdf>
-Package pdftex.def Info: PUTAPRUEBA-001.pdf  used on input line 42.
+Package pdftex.def Info: PUTAPRUEBA-001.pdf  used on input line 149.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
- [1
-
-{/home/xacome/.miktex/texmfs/data/pdftex/config/pdftex.map}]
-<PUTAPRUEBA-002.pdf, id=25, 433.62pt x 433.62pt>
+ [5]
+<PUTAPRUEBA-002.pdf, id=37, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-002.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-002.pdf>
-Package pdftex.def Info: PUTAPRUEBA-002.pdf  used on input line 59.
+Package pdftex.def Info: PUTAPRUEBA-002.pdf  used on input line 173.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
- [2 <./PUTAPRUEBA-001.pdf>]
-Overfull \hbox (14.53027pt too wide) in paragraph at lines 67--67
+ [6 <./PUTAPRUEBA-001.pdf>]
+Overfull \hbox (14.53027pt too wide) in paragraph at lines 178--178
 []\T1/aer/bx/n/14.4 Ejercicio 3: Calcular ECN en condiciones
  []
 
-[3 <./PUTAPRUEBA-002.pdf>] [4]
-Overfull \hbox (12.65076pt too wide) in paragraph at lines 147--148
+[7 <./PUTAPRUEBA-002.pdf>]
+Overfull \hbox (8.93341pt too wide) in paragraph at lines 236--237
+\T1/aer/m/n/9 El jugador con un coste marginal más bajo tendrá como estrategia 
+dominante
+ []
+
+[8]
+Overfull \hbox (15.1367pt too wide) in paragraph at lines 238--238
+[]\T1/aer/bx/n/14.4 Ejercicio 5: Juegos dinámico de Cournot-
+ []
+
+
+Overfull \hbox (12.65076pt too wide) in paragraph at lines 260--261
 []\T1/aer/m/n/9 realizando la derivada parcial, con respecto a $\OML/cmm/m/it/9
  q\OT1/cmr/m/n/9 1$\T1/aer/m/n/9 , y reordenando obtenemos
  []
 
-<PUTAPRUEBA-003.pdf, id=47, 433.62pt x 433.62pt>
+<PUTAPRUEBA-003.pdf, id=60, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-003.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-003.pdf>
-Package pdftex.def Info: PUTAPRUEBA-003.pdf  used on input line 165.
+Package pdftex.def Info: PUTAPRUEBA-003.pdf  used on input line 279.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
-[5]
-<PUTAPRUEBA-004.pdf, id=51, 433.62pt x 433.62pt>
+[9]
+<PUTAPRUEBA-004.pdf, id=64, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-004.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-004.pdf>
-Package pdftex.def Info: PUTAPRUEBA-004.pdf  used on input line 180.
+Package pdftex.def Info: PUTAPRUEBA-004.pdf  used on input line 294.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
- [6 <./PUTAPRUEBA-003.pdf>]
-Overfull \hbox (29.02469pt too wide) in paragraph at lines 190--190
-[]\T1/aer/bx/n/14.4 Ejercicio 6:Generalización de juego estático
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 194.
-[7 <./PUTAPRUEBA-004.pdf>]
-Overfull \hbox (16.70871pt too wide) in paragraph at lines 227--227
+ [10 <./PUTAPRUEBA-003.pdf>] [11 <./PUTAPRUEBA-004.pdf>]
+Overfull \hbox (16.70871pt too wide) in paragraph at lines 341--341
 []\T1/aer/bx/n/12 Los dos jugadores tienen información incompleta
  []
 
 
-Overfull \hbox (38.82405pt too wide) in paragraph at lines 227--227
+Overfull \hbox (38.82405pt too wide) in paragraph at lines 341--341
 \T1/aer/bx/n/12 y simétrica (por lo tanto ambos asignan las probabilidades
  []
 
-<PUTAPRUEBA-005.pdf, id=69, 433.62pt x 433.62pt>
+<PUTAPRUEBA-005.pdf, id=81, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-005.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-005.pdf>
-Package pdftex.def Info: PUTAPRUEBA-005.pdf  used on input line 250.
+Package pdftex.def Info: PUTAPRUEBA-005.pdf  used on input line 364.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
-[8] [9 <./PUTAPRUEBA-005.pdf>]
-<PUTAPRUEBA-008.pdf, id=81, 433.62pt x 433.62pt>
+[12] [13 <./PUTAPRUEBA-005.pdf>]
+<PUTAPRUEBA-008.pdf, id=94, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-008.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-008.pdf>
-Package pdftex.def Info: PUTAPRUEBA-008.pdf  used on input line 299.
+Package pdftex.def Info: PUTAPRUEBA-008.pdf  used on input line 413.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
- [10 <./PUTAPRUEBA-008.pdf>]
-Overfull \hbox (0.92389pt too wide) in paragraph at lines 367--367
+ [14 <./PUTAPRUEBA-008.pdf>]
+Overfull \hbox (0.92389pt too wide) in paragraph at lines 481--481
 []\T1/aer/bx/n/14.4 Ejercicio 7: Competencia Bertrand con
  []
 
 
-Overfull \hbox (4.42896pt too wide) in paragraph at lines 376--377
+Overfull \hbox (4.42896pt too wide) in paragraph at lines 490--491
 \T1/aer/m/n/9 de la empresa 1, es decir, sabe que el coste la empresa 1 es $[]$
  con probabilidad
  []
 
-[11]
-Overfull \hbox (10.07173pt too wide) in paragraph at lines 381--382
+[15]
+Overfull \hbox (10.07173pt too wide) in paragraph at lines 495--496
 []\T1/aer/m/n/9 La estrategia óptima para cada empresa es decidir el precio que
  constituya
  []
 
 
-Overfull \hbox (1.72224pt too wide) in paragraph at lines 381--382
+Overfull \hbox (1.72224pt too wide) in paragraph at lines 495--496
 \T1/aer/m/n/9 Así, sus mejores respuestas provendrán de la maximización de sus 
 funciones
  []
 
 
-Overfull \hbox (134.87709pt too wide) detected at line 403
-[] \OT1/cmr/m/n/9 = []
+Overfull \hbox (57.79944pt too wide) detected at line 519
+[]
  []
 
-[12]
-Overfull \hbox (7.3494pt too wide) in paragraph at lines 433--434
+[16]
+Overfull \hbox (7.3494pt too wide) in paragraph at lines 549--550
 []\T1/aer/m/n/9 Cada i cree que el resto de valoraciones $\OML/cmm/m/it/9 v[]$ 
 \T1/aer/m/n/9 está uniformemente distribuida
  []
 
-[13]
-Overfull \hbox (2.04366pt too wide) in paragraph at lines 473--474
+[17]
+Overfull \hbox (2.04366pt too wide) in paragraph at lines 589--590
 []\T1/aer/m/n/9 Esta expresión denota la relación existente entre la puja de ca
 da jugador
  []
 
-[14]
-Overfull \hbox (3.90677pt too wide) in paragraph at lines 534--535
+[18]
+Overfull \hbox (3.90677pt too wide) in paragraph at lines 651--652
 []\T1/aer/m/n/9 Vemos con esto los valores esperados el individuo 2 tendrá una 
 estrategia
  []
 
 
-Overfull \hbox (17.4641pt too wide) in paragraph at lines 562--562
+Overfull \hbox (17.4641pt too wide) in paragraph at lines 679--679
 []\T1/aer/bx/n/12 Generalizar el modelo con el sistema de creencias
  []
 
-[15] [16] (PUTAPRUEBA.aux)
+[19]
+Overfull \hbox (26.3299pt too wide) detected at line 725
+\OML/cmm/m/it/9 E\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 u[]; C\OT1/cmr/m/n/9 ) = \OML/
+cmm/m/it/9 p\OT1/cmr/m/n/9 (1 \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 \OT1/cmr/m/n/9
+ )(1 \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 c[]\OT1/cmr/m/n/9 ) + (1 \OMS/cmsy/m/n/9
+   \OML/cmm/m/it/9 p\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 \OT1/cmr/m/n/9 (1 \OMS/cms
+y/m/n/9   \OML/cmm/m/it/9 c[]\OT1/cmr/m/n/9 ) + \OML/cmm/m/it/9 p\OT1/cmr/m/n/9
+ (1 \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 c[]\OT1/cmr/m/n/9 ) + (1 \OMS/cmsy/m/n/9 
+  \OML/cmm/m/it/9 p\OT1/cmr/m/n/9 )(1 \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 \OT1/c
+mr/m/n/9 )(1 \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 c[]\OT1/cmr/m/n/9 ) = 1 \OMS/cms
+y/m/n/9   \OML/cmm/m/it/9 c[]
+ []
+
+[20] (PUTAPRUEBA.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4032 strings out of 494865
- 62638 string characters out of 3178257
- 119643 words of memory out of 3000000
- 7599 multiletter control sequences out of 15000+200000
- 26119 words of font info for 58 fonts, out of 3000000 for 9000
+ 4150 strings out of 494865
+ 64195 string characters out of 3178257
+ 262802 words of memory out of 3000000
+ 7702 multiletter control sequences out of 15000+200000
+ 30140 words of font info for 67 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 44i,14n,42p,758b,377s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,13n,42p,758b,373s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b></home/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 ></home/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -533,21 +650,21 @@ b></home/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 home/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></h
 ome/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></ho
 me/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></hom
-e/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/
-xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/xa
-come/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/xaco
-me/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/xacome
-/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/xacome/.
-miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsltt10.pfb></home/xacome
-/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/xacome
-/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/xacome/
+e/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home
+/xacome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/x
+acome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/xac
+ome/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/xacom
+e/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/xacome/
+.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/xacome/.m
+iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsltt10.pfb></home/xacome/
+.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/xacome/
 .miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/xacome/.
 miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/xacome/.m
 iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb></home/xacome/.mi
 ktex/texmfs/install/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on PUTAPRUEBA.pdf (16 pages, 304049 bytes).
+Output written on PUTAPRUEBA.pdf (20 pages, 364275 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
+ 197 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  39 words of extra memory for PDF output out of 10000 (max. 10000000)
 
