@@ -6,6 +6,19 @@
 \usepackage{synttree} 
 \usepackage{slashbox}
 \usepackage{subfig}
+
+\usepackage{vmargin}
+
+\setpapersize{A4}
+\setmargins{2.5cm}       % margen izquierdo
+{1.5cm}                        % margen superior
+{16.5cm}                      % anchura del texto
+{23.42cm}                    % altura del texto
+{10pt}                           % altura de los encabezados
+{1cm}                           % espacio entre el texto y los encabezados
+{0pt}                             % altura del pie de página
+{2cm}     
+
 \begin{document}
 \maketitle
 \abstract{Tareas para entregar de la asignatura An\'alisis del Comportamiento Estrat\'egico. M\'aster en Econom\'ia.}
@@ -83,7 +96,7 @@ La siguiente figura refleja un juego respresentado en su forma extensiva:
 \end{center}
 
 Y esta es su correspondiente forma normal, en la que las estrategias del jugador uno est\'an descritas por las filas, las del jugador 3 en columnas y las estrategias del jugador 2 en matrices:
-\newpage
+
 
 \begin{table}[h!]
 \begin{center}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.11)  15 FEB 2019 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.11)  16 FEB 2019 13:34
 entering extended mode
 **./PUTAPRUEBA.tex
 (PUTAPRUEBA.tex
@@ -315,7 +315,13 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \sf@top=\skip48
 \sf@bottom=\skip49
 )
-(PUTAPRUEBA.aux
+(C:\Users\epiph\AppData\Roaming\MiKTeX\2.9\tex/latex/vmargin\vmargin.sty
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+\PaperWidth=\dimen115
+\PaperHeight=\dimen116
+) (PUTAPRUEBA.aux
 
 LaTeX Warning: Label `tabla:sencilla' multiply defined.
 
@@ -346,35 +352,35 @@ LaTeX Warning: Label `tabla:sencilla' multiply defined.
 )
 \openout1 = `PUTAPRUEBA.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 22.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    ... okay on input line 22.
 
 (C:\Users\epiph\AppData\Roaming\MiKTeX\2.9\tex/context/base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count128
-\scratchdimen=\dimen115
+\scratchdimen=\dimen117
 \scratchbox=\box33
 \nofMPsegments=\count129
 \nofMParguments=\count130
 \everyMPshowfont=\toks15
 \MPscratchCnt=\count131
-\MPscratchDim=\dimen116
+\MPscratchDim=\dimen118
 \MPnumerator=\count132
 \makeMPintoPDFobject=\count133
 \everyMPtoPDFconversion=\toks16
@@ -429,11 +435,11 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 10.
+(Font)              <12> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 10.
+(Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 10.
+(Font)              <6> on input line 23.
  [1
 
 {C:/Users/epiph/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (PUTAPRUEBA
@@ -442,25 +448,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
-
-Overfull \hbox (9.14232pt too wide) in paragraph at lines 11--11
- [] []\T1/aer/bx/n/9 Ejercicio 4: Bertrand, mejor re-spuesta con costes margina
-les 
- []
-
-
-Overfull \hbox (1.46791pt too wide) in paragraph at lines 14--14
- [][] []\T1/aer/m/n/9 Los dos ju-gadores tienen in-for-ma-ción in-com-pleta y s
-imétrica 
- []
-
 )
 \tf@toc=\write4
 \openout4 = `PUTAPRUEBA.toc'.
 
- [2] (PUTAPRUEBA-concordance.tex) (PUTAPRUEBA-concordance.tex)
+
+[2] (PUTAPRUEBA-concordance.tex) (PUTAPRUEBA-concordance.tex)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 25.
+(Font)              <7> on input line 38.
 \MTr@childibox=\box34
 \MTr@childix=\count134
 \MTr@childiy=\count135
@@ -482,98 +477,64 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \MTr@childiipicheight=\count150
 \MTr@childiitriangle=\count151
  [3] [4]
-Overfull \hbox (16.09645pt too wide) in paragraph at lines 138--139
-\T1/aer/m/n/9 vari-ables (la dis-posi-ción a pa-gar su-pe-rior al coste margina
-l,a>c). Si suponemos
- []
+LaTeX Font Info:    Try loading font information for T1+aett on input line 154.
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 141.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [5]
-<PUTAPRUEBA-001.pdf, id=34, 433.62pt x 433.62pt>
+)
+<PUTAPRUEBA-001.pdf, id=28, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-001.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-001.pdf>
-Package pdftex.def Info: PUTAPRUEBA-001.pdf  used on input line 152.
-(pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
-<PUTAPRUEBA-002.pdf, id=35, 433.62pt x 433.62pt>
+Package pdftex.def Info: PUTAPRUEBA-001.pdf  used on input line 165.
+(pdftex.def)             Requested size: 375.57779pt x 375.59885pt.
+ [5 <./PUTAPRUEBA-001.pdf>]
+<PUTAPRUEBA-002.pdf, id=42, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-002.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-002.pdf>
-Package pdftex.def Info: PUTAPRUEBA-002.pdf  used on input line 176.
-(pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
- [6 <./PUTAPRUEBA-001.pdf>] [7 <./PUTAPRUEBA-002.pdf>] [8]
-Overfull \hbox (15.1367pt too wide) in paragraph at lines 241--241
-[]\T1/aer/bx/n/14.4 Ejercicio 5: Jue-gos dinámico de Cournot-
+Package pdftex.def Info: PUTAPRUEBA-002.pdf  used on input line 189.
+(pdftex.def)             Requested size: 375.57779pt x 375.59885pt.
+ [6 <./PUTAPRUEBA-002.pdf>]
+Overfull \hbox (23.97913pt too wide) in paragraph at lines 250--250
+[]\T1/aer/bx/n/14.4 Ejercicio 4: Bertrand, mejor re-spuesta con costes marginal
+es
  []
 
-
-Overfull \hbox (2.45331pt too wide) in paragraph at lines 243--244
-\T1/aer/m/n/9 En este ejer-ci-cio in-tentare-mos mostrar que en jue-gos dinámi-
-cos de Cournot-
- []
-
-[9]
-<PUTAPRUEBA-003.pdf, id=63, 433.62pt x 433.62pt>
+[7]
+<PUTAPRUEBA-003.pdf, id=57, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-003.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-003.pdf>
-Package pdftex.def Info: PUTAPRUEBA-003.pdf  used on input line 282.
-(pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
-<PUTAPRUEBA-004.pdf, id=64, 433.62pt x 433.62pt>
+Package pdftex.def Info: PUTAPRUEBA-003.pdf  used on input line 295.
+(pdftex.def)             Requested size: 375.57779pt x 375.59885pt.
+ [8]
+<PUTAPRUEBA-004.pdf, id=61, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-004.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-004.pdf>
-Package pdftex.def Info: PUTAPRUEBA-004.pdf  used on input line 297.
-(pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
- [10 <./PUTAPRUEBA-003.pdf>] [11 <./PUTAPRUEBA-004.pdf>]
-<PUTAPRUEBA-005.pdf, id=81, 433.62pt x 433.62pt>
+Package pdftex.def Info: PUTAPRUEBA-004.pdf  used on input line 310.
+(pdftex.def)             Requested size: 375.57779pt x 375.59885pt.
+ [9 <./PUTAPRUEBA-003.pdf>] [10 <./PUTAPRUEBA-004.pdf>]
+<PUTAPRUEBA-005.pdf, id=78, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-005.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-005.pdf>
-Package pdftex.def Info: PUTAPRUEBA-005.pdf  used on input line 367.
-(pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
- [12] [13 <./PUTAPRUEBA-005.pdf>]
-<PUTAPRUEBA-008.pdf, id=94, 433.62pt x 433.62pt>
+Package pdftex.def Info: PUTAPRUEBA-005.pdf  used on input line 380.
+(pdftex.def)             Requested size: 375.57779pt x 375.59885pt.
+ [11] [12 <./PUTAPRUEBA-005.pdf>]
+<PUTAPRUEBA-008.pdf, id=90, 433.62pt x 433.62pt>
 File: PUTAPRUEBA-008.pdf Graphic file (type pdf)
 <use PUTAPRUEBA-008.pdf>
-Package pdftex.def Info: PUTAPRUEBA-008.pdf  used on input line 416.
-(pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
- [14 <./PUTAPRUEBA-008.pdf>]
-Overfull \hbox (0.92389pt too wide) in paragraph at lines 484--484
-[]\T1/aer/bx/n/14.4 Ejercicio 7: Com-pe-ten-cia Bertrand con
- []
-
-[15]
-Overfull \hbox (57.79944pt too wide) detected at line 522
-[]
- []
-
-[16] [17] [18]
-Overfull \hbox (0.3524pt too wide) in paragraph at lines 682--682
-[]\T1/aer/bx/n/12 Generalizar el mod-elo con el sis-tema de creen-
- []
-
-[19]
-Overfull \hbox (26.3299pt too wide) detected at line 728
-\OML/cmm/m/it/9 E\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 u[]; C\OT1/cmr/m/n/9 ) = \OML/
-cmm/m/it/9 p\OT1/cmr/m/n/9 (1 \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 \OT1/cmr/m/n/9
- )(1 \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 c[]\OT1/cmr/m/n/9 ) + (1 \OMS/cmsy/m/n/9
-   \OML/cmm/m/it/9 p\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 \OT1/cmr/m/n/9 (1 \OMS/cms
-y/m/n/9   \OML/cmm/m/it/9 c[]\OT1/cmr/m/n/9 ) + \OML/cmm/m/it/9 p\OT1/cmr/m/n/9
- (1 \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 c[]\OT1/cmr/m/n/9 ) + (1 \OMS/cmsy/m/n/9 
-  \OML/cmm/m/it/9 p\OT1/cmr/m/n/9 )(1 \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 \OT1/c
-mr/m/n/9 )(1 \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 c[]\OT1/cmr/m/n/9 ) = 1 \OMS/cms
-y/m/n/9   \OML/cmm/m/it/9 c[]
- []
-
-[20] (PUTAPRUEBA.aux)
+Package pdftex.def Info: PUTAPRUEBA-008.pdf  used on input line 429.
+(pdftex.def)             Requested size: 375.57779pt x 375.59885pt.
+ [13 <./PUTAPRUEBA-008.pdf>] [14] [15] [16] [17] [18]
+(PUTAPRUEBA.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4149 strings out of 492946
- 63820 string characters out of 3135527
- 267539 words of memory out of 3000000
- 7947 multiletter control sequences out of 15000+200000
+ 4223 strings out of 492946
+ 64733 string characters out of 3135527
+ 244330 words of memory out of 3000000
+ 8017 multiletter control sequences out of 15000+200000
  30140 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,13n,42p,727b,373s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -598,9 +559,9 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/latxfont/line10.pfb>
-Output written on PUTAPRUEBA.pdf (20 pages, 363561 bytes).
+Output written on PUTAPRUEBA.pdf (18 pages, 362106 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
+ 190 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  39 words of extra memory for PDF output out of 10000 (max. 10000000)
 
